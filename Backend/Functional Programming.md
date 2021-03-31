@@ -6,6 +6,7 @@ Read by:
 
 ## FP Simplified by Alvin Alexander
 As the book title, FP Simplified explains the FP concepts and its buzzwords in plain English. Pick this first before touching the Red Book.
+
 Read by:
 * Tammy (recommended)
 
