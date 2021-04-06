@@ -1,6 +1,7 @@
 {
     "imports": {
-        "markdown": "https://deno.land/x/markdown@v2.0.0/mod.ts"
+        "markdown": "https://deno.land/x/markdown@v2.0.0/mod.ts",
+        "markdown_tree": "https://deno.land/x/markdown_tree@1.1.0/mod.ts"
     },
     "scopes": {}
 }
