@@ -1,5 +1,32 @@
 # Codestar Learning
 
+## Schedule intake
+
+Martin
+===
+Abishek
+Bart
+Bjorn
+Cuno
+Martin
+Mikel
+Donovan
+===
+Daniel
+Eelco
+Hamza
+Hassan
+Hernan
+Jan
+Werner
+===
+Jean-Marc
+Lone
+Nathan
+Rene
+Roberto
+Tammy
+
 ## Goal
 
 We'd like to provide **a curated list of learning resources to learn about any topic**.
