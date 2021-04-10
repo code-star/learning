@@ -1,8 +1,18 @@
 import { formatFileName } from "./formatters.ts";
 import { FileData2, TopicTree } from "./types.ts";
 
+const byKey = (entry: [string, unknown], otherEntry: [string, unknown]): number => {
+  if(entry[0] > otherEntry[0])  {
+    return 1;
+  }
+  if(entry[0] < otherEntry[0])  {
+    return -1;
+  }
+  return 0;
+}
+
 const renderTree = (topicTree: TopicTree): string => {
-  const listStr = Object.entries(topicTree).map(([entryKey, entryVal]) => {
+  const listStr = Object.entries(topicTree).sort(byKey).map(([entryKey, entryVal]) => {
     const { pathSegments, content, name, ...rest } = entryVal as
       | TopicTree
       | FileData2;
