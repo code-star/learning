@@ -19,10 +19,10 @@ const renderTree = (topicTree: TopicTree): string => {
     const contentStr = content ? `<ul><li>${content}</li></ul>` : "";
     const hasRest = Object.keys(rest).length > 0;
     return hasRest
-      ? `<li>${entryKey}<ul>${renderTree(rest)}</ul></li>`
-      : `<li>${formatFileName(entryKey)} ${contentStr}</li>`;
+      ? `<li>${entryKey}<ul>${renderTree(rest)}</ul></li>\n`
+      : `<li>${formatFileName(entryKey)} ${contentStr}</li>\n`;
   });
-  return `${listStr.join("")}`;
+  return `${listStr.join("")}\n`;
 };
 
 const generateHtml = (topicTree: TopicTree) => `<!DOCTYPE html>
