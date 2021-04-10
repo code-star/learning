@@ -35,15 +35,15 @@ import { FileData, FileData2, TopicTree } from "./types.ts";
 
 // const tt3name = tt3.foo.bar.name;
 
-const foo = (pathSegments: string[]): string => {
-  console.log(pathSegments[0], pathSegments);
-  if (pathSegments.length <= 1) {
-    return pathSegments[0];
-  }
-  return foo(pathSegments.slice(1));
-};
+// const foo = (pathSegments: string[]): string => {
+//   console.log(pathSegments[0], pathSegments);
+//   if (pathSegments.length <= 1) {
+//     return pathSegments[0];
+//   }
+//   return foo(pathSegments.slice(1));
+// };
 
-console.log(foo(["a", "b", "c"]));
+// console.log(foo(["a", "b", "c"]));
 
 // gegeven een acc en een pathSegments
 //   als pathSegment length = 1
@@ -54,45 +54,83 @@ console.log(foo(["a", "b", "c"]));
 //   en ... pathSegments.slice(1)
 //   en ...
 
-const bar = (
-  pathSegments: string[],
-  acc: TopicTree,
-  fd: FileData2
-): TopicTree => {
-  console.log(pathSegments[0], pathSegments);
-  if (pathSegments.length < 1) {
-    return acc;
-  }
-  if (pathSegments.length === 1) {
-    acc[pathSegments[0]] = fd;
-    // return pathSegments[0];
-    return acc;
-  }
-  return bar(pathSegments.slice(1), acc, fd);
-};
+// const bar = (
+//   pathSegments: string[],
+//   acc: TopicTree,
+//   fd: FileData2
+// ): TopicTree => {
+//   console.log(pathSegments[0], pathSegments);
+//   if (pathSegments.length < 1) {
+//     return acc;
+//   }
+//   if (pathSegments.length === 1) {
+//     acc[pathSegments[0]] = fd;
+//     // return pathSegments[0];
+//     return acc;
+//   }
+//   return bar(pathSegments.slice(1), acc, fd);
+// };
 
-const reduceToTree = (acc: TopicTree, next: FileData2) => {
-  const { pathSegments, ...rest } = next;
-  // console.log(bar(pathSegments, acc, next));
-  //   TODO use recursion
-  if (pathSegments.length === 3) {
-    if (!acc[pathSegments[0]]) {
-      acc[pathSegments[0]] = {};
-    }
-    if (!acc[pathSegments[0]][pathSegments[1]]) {
-      acc[pathSegments[0]][pathSegments[1]] = {};
-    }
-    acc[pathSegments[0]][pathSegments[1]][pathSegments[2]] = next;
+const reduceSegmentsToLeaf = (fileData: FileData2) => (ref: TopicTree, seg: string, index: number, segments: string[]) => {
+  const isLastSegment = segments.length === index + 1;
+
+  if(!ref[seg]) {
+    ref[seg] = {};
   }
-  if (pathSegments.length === 2) {
-    if (!acc[pathSegments[0]]) {
-      acc[pathSegments[0]] = {};
-    }
-    acc[pathSegments[0]][pathSegments[1]] = next;
+
+  // If the leaf
+  if(isLastSegment) {
+    ref[seg] = fileData;
+  // Otherwise, dig further
+  } else {
+    ref = ref[seg];
   }
-  if (pathSegments.length === 1) {
-    acc[pathSegments[0]] = next;
-  }
+
+  return ref;
+}
+
+const reduceToTree = (acc: TopicTree, nextFileData: FileData2) => {
+  const { pathSegments, ...rest } = nextFileData;
+  // console.log(bar(pathSegments, acc, nextFileData));
+
+  // if (pathSegments.length === 3) {
+  //   if (!acc[pathSegments[0]]) {
+  //     acc[pathSegments[0]] = {};
+  //   }
+  //   if (!acc[pathSegments[0]][pathSegments[1]]) {
+  //     acc[pathSegments[0]][pathSegments[1]] = {};
+  //   }
+  //   acc[pathSegments[0]][pathSegments[1]][pathSegments[2]] = nextFileData;
+  // }
+  // if (pathSegments.length === 2) {
+  //   if (!acc[pathSegments[0]]) {
+  //     acc[pathSegments[0]] = {};
+  //   }
+  //   acc[pathSegments[0]][pathSegments[1]] = nextFileData;
+  // }
+  // if (pathSegments.length === 1) {
+  //   acc[pathSegments[0]] = nextFileData;
+  // }
+
+  // let ref = acc;
+
+  // pathSegments.forEach((seg, index) => {
+  //   if(!ref[seg]) {
+  //     ref[seg] = {};
+  //   }
+
+  //   // If the leaf
+  //   if(pathSegments.length === index + 1) {
+  //     ref[seg] = nextFileData;
+  //   // Otherwise, dig
+  //   } else {
+  //     ref = ref[seg];
+  //   }
+  // });
+
+  // return acc;
+
+  pathSegments.reduce(reduceSegmentsToLeaf(nextFileData), acc);
   return acc;
 };
 
