@@ -1,7 +1,21 @@
-import { formatLeaf } from "./formatters.ts";
+import { formatFileName } from "./formatters.ts";
 import { FileData2, TopicTree } from "./types.ts";
 
-const generateHtml = (resultsTree: any) => `<!DOCTYPE html>
+const renderTree = (topicTree: TopicTree): string => {
+  const listStr = Object.entries(topicTree).map(([entryKey, entryVal]) => {
+    const { pathSegments, content, name, ...rest } = entryVal as
+      | TopicTree
+      | FileData2;
+    const contentStr = content ? `<ul><li>${content}</li></ul>` : "";
+    const hasRest = Object.keys(rest).length > 0;
+    return hasRest
+      ? `<li>${entryKey}<ul>${renderTree(rest)}</ul></li>`
+      : `<li>${formatFileName(entryKey)} ${contentStr}</li>`;
+  });
+  return `${listStr.join("")}`;
+};
+
+const generateHtml = (topicTree: TopicTree) => `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,26 +29,7 @@ html, body {
     </style>
 </head>
 <body>
-    ${Object.entries(resultsTree)
-      // TODO refactor to recursion
-      .map(([entryKey1, entryVal1]) => {
-        // TODO use entries generic with proper type instead of Record
-        const { pathSegments, name, content, ...rest } = entryVal1 as Record<string, unknown>;
-        const y = rest
-          ? Object.entries(rest)
-              .map(([entryKey2, entryVal2]) => {
-                const { pathSegments, name, content, ...rest1 } = entryVal2 as Record<string, string>;
-                const z = rest1
-                  ? Object.entries(rest1).map(formatLeaf).join("")
-                  : "";
-                // TODO only add ul if z not empty
-                return `<li>${entryKey2}<ul>${z}</ul></li>`;
-              })
-              .join("")
-          : "";
-        return `<li>${entryKey1}<ul>${y}</ul></li>`;
-      })
-      .join("")}
+    ${renderTree(topicTree)} 
 </body>
 </html>`;
 
