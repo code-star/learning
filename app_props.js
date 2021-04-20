@@ -1,4 +1,4 @@
-import projectConfig from '/pagic.config.js';
+import projectConfig from '/learning/pagic.config.js';
 import App from './app_content.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
@@ -31,12 +31,12 @@ export default {
             nav: [
                 {
                     icon: 'czs-home-l',
-                    link: '/learning/index.html',
+                    link: '/learning/app.html',
                     text: 'Homepage'
                 },
                 {
                     icon: 'czs-about-l',
-                    link: '/learning/about/index.html',
+                    link: '/learning/about.html',
                     text: 'About'
                 }
             ],
@@ -52,7 +52,7 @@ export default {
                 'blog'
             ],
             port: 8000,
-            root: '/',
+            root: '/learning/',
             serve: false,
             srcDir: 'src/client',
             theme: 'blog',
@@ -63,7 +63,7 @@ export default {
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/index.js", type: "module" })),
+        React.createElement("script", { src: "/learning/index.js", type: "module" })),
     'blog': {
         "isPost": false,
         "posts": [],
