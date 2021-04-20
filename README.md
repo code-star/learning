@@ -59,3 +59,4 @@ Tammy
 - Install Velociraptor: `deno install -qA -n vr https://deno.land/x/velociraptor@1.0.0-beta.18/cli.ts`
 - Install Pagic: `deno install --unstable --allow-read --allow-write --allow-net --allow-run --name=pagic https://deno.land/x/pagic/mod.ts`
 - `vr build`
+- to run locally, remove `root: "/learning/",` from pagic.config.ts
