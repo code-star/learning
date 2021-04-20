@@ -28,11 +28,11 @@ General knowledge about Functional Programming can be added to `Backend/Function
 Martin
 ---
 Abishek
-Bart
+Bart*
 Bjorn
 Cuno
 Martin
-Mikel
+Mikel*
 
 Donovan
 ---
@@ -51,3 +51,10 @@ Nathan
 Rene
 Roberto
 Tammy
+
+
+# Installation of module
+
+- Install Deno
+- Install Velociraptor: deno install -qA -n vr https://deno.land/x/velociraptor@1.0.0-beta.18/cli.ts
+- `vr build`
