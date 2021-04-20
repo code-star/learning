@@ -7,3 +7,22 @@ This playlist starts with explaining what RxJS is and why you would want to use 
 Watched by:
 
 * Bart
+
+
+## Master RxJS 6 Without Breaking A Sweat
+
+https://www.udemy.com/course/master-rxjs-without-breaking-a-sweat/
+
+Watched by:
+
+* Cuno
+
+## Asynchronous Programming in JavaScript (with Rx.js Observables)
+
+https://frontendmasters.com/courses/asynchronous-javascript/
+
+An older course, but explains the concepts very well.
+
+Watched by:
+
+* Cuno

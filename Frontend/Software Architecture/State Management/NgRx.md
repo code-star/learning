@@ -12,13 +12,8 @@ Watched by:
 
 https://app.pluralsight.com/library/courses/ng-conf-2020-session-37/table-of-contents
 
-Go from inactive to reactive when building Angular apps. By the creators of NgRx, Mike Ryan and Brandon Roberts. Explains some FP theory and different kind of map operators (e.g. mergeMap).
+Go from inactive to reactive when building Angular apps. By the creators of NgRx, Mike Ryan and Brandon Roberts. Explains some FP theory and different kind of map operators (e.g. mergeMap). A couple of steps beyond the mentioned course "Angular NgRx: Getting Started".
 
 Watched by:
 
 * Bart
-
-
-
-https://www.youtube.com/watch?v=T9wOu11uU6U&list=PL55RiY5tL51pHpagYcrN9ubNLVXF8rGVi (dit is een playlist) RxJS what and why, voor iedereen die met RxJS wil beginnen en ook voor alle beginnende Angular devs; goed omdat uitlegd vanuit UI perspectief en alles is dus visueel
-

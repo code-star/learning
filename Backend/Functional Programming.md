@@ -9,6 +9,7 @@ As the book title, FP Simplified explains the FP concepts and its buzzwords in p
 
 Read by:
 * Tammy (recommended)
+* Cuno
 
 ## Structure and Interpretation of Computer Programs
 Big but extremely thorough intro into functional programming, without being a course on function programming at all. You will also learn a couple of mathematical foundations of programming.
