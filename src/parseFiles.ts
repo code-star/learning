@@ -1,45 +1,51 @@
-import { walkSync } from "fs";
+import { WalkEntry, walkSync } from "fs";
 import { Node } from "markdown_tree";
 import { digForHeadingContent } from "./parseMarkdown.ts";
 import { FileData } from "./types.ts";
 
+/* Examples:
+  Read file: await Deno.readFile(filename));
+
+  Parse with Marked:
+    Marked.setOptions({
+        renderer: new Renderer()
+    });
+    const markup = Marked.parse(markdown);
+
+*/
+
 async function parseFile(path: string, name: string): Promise<FileData> {
-    const decoder = new TextDecoder("utf-8");
-    const filename = path; // Deno.args[0];
-    // console.log(await Deno.readFile(filename));
-    const markdown = decoder.decode(await Deno.readFile(filename));
-    // console.log(markdown);
-    // Marked.setOptions({
-    //     renderer: new Renderer()
-    // });
-    // const markup = Marked.parse(markdown);
-    // console.log(markup.content);
-    // console.log(JSON.stringify(markup.meta));
-    const markdownNode = Node.from(markdown);
-    //   console.log(JSON.stringify(markdownNode));
-    //   console.log(digForHeadingContent(markdownNode));
-    const result = {
-      path,
-      name,
-      content: digForHeadingContent(markdownNode),
-    };
-    //   console.log(result);
-    return result;
-  }
+  const decoder = new TextDecoder("utf-8");
+  const filename = path;
+  const markdown = decoder.decode(await Deno.readFile(filename));
+  const markdownNode = Node.from(markdown);
+  const result = {
+    path,
+    name,
+    content: digForHeadingContent(markdownNode),
+  };
+  return result;
+}
 
-export const parseFilesOnPaths = async (dirs: string[]): Promise<FileData[]> => {
-    let results: FileData[] = [];
-  
-    for (const dir of dirs) {
-      for (const entry of walkSync(dir)) {
-        if (entry.isFile) {
-          // console.log("found file", entry.path, entry);
-          results.push(await parseFile(entry.path, entry.name));
-        } else {
-          // console.log("found dir", entry.path);
-        }
-      }
-    }
-
-    return results;
+const mapPathToFileData = (entry: WalkEntry): Promise<FileData> | undefined => {
+  if (entry.isFile) {
+    return parseFile(entry.path, entry.name);
   }
+};
+
+const isDefinedEntry = (entry: FileData | undefined): entry is FileData =>
+  typeof entry !== "undefined";
+
+export const parseFilesOnPaths = async (
+  dirs: string[]
+): Promise<FileData[]> => {
+  const results: FileData[] = (
+    await Promise.all(
+      dirs.flatMap((dir) =>
+        Array.from(walkSync(dir)).map(mapPathToFileData)
+      )
+    )
+  ).filter(isDefinedEntry);
+
+  return results;
+};
