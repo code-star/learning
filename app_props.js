@@ -1,7 +1,7 @@
 import projectConfig from '/pagic.config.js';
 import App from './app_content.js';
 export default {
-    config: { "root": "/", ...projectConfig, branch: 'feature/visualisation' },
+    config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "app.tsx",
     'layoutPath': "_layout.tsx",
     'outputPath': "app.html",
@@ -13,7 +13,7 @@ export default {
                     twitter: 'CodestarNL'
                 }
             },
-            branch: 'feature/visualisation',
+            branch: 'main',
             description: 'Codestar Learning',
             exclude: [
                 '**/.*',

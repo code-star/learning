@@ -1,6 +1,6 @@
 import projectConfig from '/pagic.config.js';
 export default {
-    config: { "root": "/", ...projectConfig, branch: 'feature/visualisation' },
+    config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "about.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "about.html",
@@ -18,11 +18,11 @@ export default {
             __html: ''
         } }),
     'toc': null,
-    'author': "M.D. van Es",
+    'author': "mdvanes",
     'contributors': [
-        "M.D. van Es"
+        "mdvanes"
     ],
-    'date': "2021-04-20T12:28:05.000Z",
+    'date': "2021-04-20T12:32:25.000Z",
     'updated': null,
     'excerpt': "",
     'cover': undefined,
