@@ -12,6 +12,23 @@ const byKey = (entry: [string, unknown], otherEntry: [string, unknown]): number 
   return 0;
 }
 
+interface Props {
+  label: string;
+  tree: {
+    [key: string]: any
+  };
+}
+
+const FoldableListItem: React.FC<Props> = ({ label, tree}) => {
+  const [isFolded, setIsFolded] = React.useState(true);
+  // ᐅ
+  const result = isFolded ? "▼" : <ul>{renderTree(tree)}</ul>;
+  return <li onClick={() => {
+    alert("hoiooi");
+    setIsFolded(!isFolded);
+  }}>{label} {result}</li>
+}
+
 const renderTree = (topicTree: TopicTree): JSX.Element => {
   const listStr = Object.entries(topicTree).sort(byKey).map(([entryKey, entryVal]) => {
     const { pathSegments, content, name, ...rest } = entryVal as
@@ -20,7 +37,8 @@ const renderTree = (topicTree: TopicTree): JSX.Element => {
     const contentStr = content ? (<ul><li>{content}</li></ul>) : "";
     const hasRest = Object.keys(rest).length > 0;
     return hasRest
-      ? <li>{entryKey}<ul>{renderTree(rest)}</ul></li>
+      // ? <li>{entryKey}<ul>x{renderTree(rest)}</ul></li>
+      ? <FoldableListItem label={entryKey} tree={rest} />
       : <li>{formatFileName(entryKey)} {contentStr}</li>;
   });
   return <>{listStr}</>;
