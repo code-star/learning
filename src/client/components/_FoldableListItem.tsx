@@ -3,7 +3,7 @@ import RenderTree from "./_RenderTree.tsx";
 
 interface Props {
   label: string;
-  content: string;
+  content: string[];
   tree: {
     [key: string]: any;
   };
@@ -24,7 +24,7 @@ const FoldableListItem: React.FC<Props> = ({ label, content, tree }) => {
   );
 
   // TODO deduplicate with similar snippet in RenderTree
-  const contentStr = content ? <li>📓 {content}</li> : "";
+  const contentStr = content ? content.map(c => <li>📚 {c}</li>) : "";
 
   const result = isFolded ? (
     ""

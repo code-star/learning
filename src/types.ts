@@ -1,11 +1,11 @@
 export interface RawFileData {
-  content: string;
+  content: string[];
   name: string;
   path: string;
 }
 
 export interface FileData {
-  content: string;
+  content: string[];
   name: string;
   pathSegments: string[];
 }

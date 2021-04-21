@@ -29,7 +29,9 @@ const RenderTree: React.FC<Props> = ({ topicTree }) => {
         | FileData;
       const contentStr = content ? (
         <ul>
-          <li>📓 {content}</li>
+          {content.map((c: string) => (
+            <li>📚 {c}</li>
+          ))}
         </ul>
       ) : (
         ""

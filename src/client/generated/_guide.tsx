@@ -1,68 +1,76 @@
 export const guide = {
   Backend: {
     Tooling: {
-      Git: { name: "Git", pathSegments: ["Backend", "Tooling", "Git"] },
+      Git: {
+        content: [],
+        name: "Git",
+        pathSegments: ["Backend", "Tooling", "Git"],
+      },
     },
     "Programming Languages": {
       Kotlin: {
-        content: "",
+        content: [],
         name: "Kotlin",
         pathSegments: ["Backend", "Programming Languages", "Kotlin"],
       },
       Java: {
-        content: "OCP Study Guide by Boyarsky and Selikoff",
+        content: ["OCP Study Guide by Boyarsky and Selikoff"],
         name: "Java",
         pathSegments: ["Backend", "Programming Languages", "Java"],
       },
       Scala: {
-        content: "Programming in Scala by Odersky",
+        content: [
+          "Programming in Scala by Odersky",
+          "Scala for the Impatient by Hostmann Cay",
+          "Introduction to the Art of Programming Using Scala by Lewis",
+        ],
         name: "Scala",
         pathSegments: ["Backend", "Programming Languages", "Scala"],
       },
       Typescript: {
-        content: "",
+        content: [],
         name: "Typescript",
         pathSegments: ["Backend", "Programming Languages", "Typescript"],
       },
       Bash: {
-        content: "",
+        content: [],
         name: "Bash",
         pathSegments: ["Backend", "Programming Languages", "Bash"],
       },
       Pyton: {
-        content: "Ordina Pythoneers knowledge tree",
+        content: ["Ordina Pythoneers knowledge tree"],
         name: "Pyton",
         pathSegments: ["Backend", "Programming Languages", "Pyton"],
       },
     },
     Testing: {
       "Dependency Injection": {
-        content: "",
+        content: [],
         name: "Dependency Injection",
         pathSegments: ["Backend", "Testing", "Dependency Injection"],
       },
       "End-to-end Tests": {
-        content: "",
+        content: [],
         name: "End-to-end Tests",
         pathSegments: ["Backend", "Testing", "End-to-end Tests"],
       },
       "Test Pyramid": {
-        content: "",
+        content: [],
         name: "Test Pyramid",
         pathSegments: ["Backend", "Testing", "Test Pyramid"],
       },
       "Integration Tests": {
-        content: "",
+        content: [],
         name: "Integration Tests",
         pathSegments: ["Backend", "Testing", "Integration Tests"],
       },
       Mocking: {
-        content: "",
+        content: [],
         name: "Mocking",
         pathSegments: ["Backend", "Testing", "Mocking"],
       },
       "Given When Then": {
-        content: "",
+        content: [],
         name: "Given When Then",
         pathSegments: ["Backend", "Testing", "Given When Then"],
       },
@@ -70,7 +78,7 @@ export const guide = {
     Infrastructure: {
       "Infrastructure As Code": {
         "AWS CDK": {
-          content: "",
+          content: [],
           name: "AWS CDK",
           pathSegments: [
             "Backend",
@@ -80,7 +88,7 @@ export const guide = {
           ],
         },
         Terraform: {
-          content: "",
+          content: [],
           name: "Terraform",
           pathSegments: [
             "Backend",
@@ -90,7 +98,7 @@ export const guide = {
           ],
         },
         Ansible: {
-          content: "",
+          content: [],
           name: "Ansible",
           pathSegments: [
             "Backend",
@@ -102,12 +110,12 @@ export const guide = {
       },
       CICD: {
         CircleCI: {
-          content: "",
+          content: [],
           name: "CircleCI",
           pathSegments: ["Backend", "Infrastructure", "CICD", "CircleCI"],
         },
         "Github Actions": {
-          content: "",
+          content: [],
           name: "Github Actions",
           pathSegments: ["Backend", "Infrastructure", "CICD", "Github Actions"],
         },
@@ -115,7 +123,7 @@ export const guide = {
     },
     "Distributed Systems": {
       "Partitioning or Sharding": {
-        content: "",
+        content: [],
         name: "Partitioning or Sharding",
         pathSegments: [
           "Backend",
@@ -124,12 +132,12 @@ export const guide = {
         ],
       },
       "CAP Theorem": {
-        content: "",
+        content: [],
         name: "CAP Theorem",
         pathSegments: ["Backend", "Distributed Systems", "CAP Theorem"],
       },
       "Consensus Algorithms": {
-        content: "",
+        content: [],
         name: "Consensus Algorithms",
         pathSegments: [
           "Backend",
@@ -139,7 +147,7 @@ export const guide = {
       },
       Replication: {
         "Multi-leader": {
-          content: "",
+          content: [],
           name: "Multi-leader",
           pathSegments: [
             "Backend",
@@ -149,7 +157,7 @@ export const guide = {
           ],
         },
         "Leader Follower": {
-          content: "",
+          content: [],
           name: "Leader Follower",
           pathSegments: [
             "Backend",
@@ -159,7 +167,7 @@ export const guide = {
           ],
         },
         Leaderless: {
-          content: "Cassandra for developers",
+          content: ["Cassandra for developers"],
           name: "Leaderless",
           pathSegments: [
             "Backend",
@@ -170,7 +178,7 @@ export const guide = {
         },
       },
       "Eventual Consistency": {
-        content: "",
+        content: [],
         name: "Eventual Consistency",
         pathSegments: [
           "Backend",
@@ -179,7 +187,7 @@ export const guide = {
         ],
       },
       "Distributed Transactions": {
-        content: "",
+        content: [],
         name: "Distributed Transactions",
         pathSegments: [
           "Backend",
@@ -187,21 +195,28 @@ export const guide = {
           "Distributed Transactions",
         ],
       },
-      content: "Designing Data-Intensive Applications by Martin Kleppmann",
+      content: [
+        "Designing Data-Intensive Applications by Martin Kleppmann",
+        "https://www.coursera.org/learn/scala-akka-reactive#syllabus",
+      ],
       name: "Distributed Systems",
       pathSegments: ["Backend", "Distributed Systems"],
     },
     Messaging: {
       Actors: {
         Akka: {
-          content: "",
+          content: [],
           name: "Akka",
           pathSegments: ["Backend", "Messaging", "Actors", "Akka"],
         },
       },
       "Distributed Messaging": {
         Kafka: {
-          content: "Kafka: The Definitive Guide by Neha Narkhede",
+          content: [
+            "Kafka: The Definitive Guide by Neha Narkhede",
+            "Learn Apache Kafka for Beginners (Udemy)",
+            "Getting Started With Apache Kafka (Pluralsight)",
+          ],
           name: "Kafka",
           pathSegments: [
             "Backend",
@@ -210,7 +225,11 @@ export const guide = {
             "Kafka",
           ],
           "Kafka Streams": {
-            content: "Kafka Streams for Data Processing (Udemy)",
+            content: [
+              "Kafka Streams for Data Processing (Udemy)",
+              "Designing Event-Driven Systems by Ben Stopford",
+              "Kafka Streams in Action by Bill Bejeck",
+            ],
             name: "Kafka Streams",
             pathSegments: [
               "Backend",
@@ -221,7 +240,7 @@ export const guide = {
             ],
           },
           Administration: {
-            content: "Kafka Cluster Setup and Administration (Udemy)",
+            content: ["Kafka Cluster Setup and Administration (Udemy)"],
             name: "Administration",
             pathSegments: [
               "Backend",
@@ -232,7 +251,7 @@ export const guide = {
             ],
           },
           "Kafka Connect": {
-            content: "Kafka Connect Hands-on Learning (Udemy)",
+            content: ["Kafka Connect Hands-on Learning (Udemy)"],
             name: "Kafka Connect",
             pathSegments: [
               "Backend",
@@ -243,7 +262,7 @@ export const guide = {
             ],
           },
           Security: {
-            content: "Kafka Security (Udemy)",
+            content: ["Kafka Security (Udemy)"],
             name: "Security",
             pathSegments: [
               "Backend",
@@ -254,7 +273,10 @@ export const guide = {
             ],
           },
           "Schema Registry": {
-            content: "Confluent Schema Registry & REST Proxy (Udemy)",
+            content: [
+              "Confluent Schema Registry & REST Proxy (Udemy)",
+              "Enforcing Data Contracts with Kafka Schema Registry (Pluralsight)",
+            ],
             name: "Schema Registry",
             pathSegments: [
               "Backend",
@@ -268,39 +290,44 @@ export const guide = {
       },
       "Traditional MQ": {
         RabbitMQ: {
-          content: "",
+          content: [],
           name: "RabbitMQ",
           pathSegments: ["Backend", "Messaging", "Traditional MQ", "RabbitMQ"],
         },
         JMS: {
-          content: "",
+          content: [],
           name: "JMS",
           pathSegments: ["Backend", "Messaging", "Traditional MQ", "JMS"],
         },
       },
     },
     "Functional Programming": {
-      content: "Functional Programming in Scala by Chiusano and Bjarnason",
+      content: [
+        "Functional Programming in Scala by Chiusano and Bjarnason",
+        "FP Simplified by Alvin Alexander",
+        "Structure and Interpretation of Computer Programs",
+        "Learn You a Haskell by Miran Lipovača",
+      ],
       name: "Functional Programming",
       pathSegments: ["Backend", "Functional Programming"],
       ProFunctor: {
-        content: "",
+        content: [],
         name: "ProFunctor",
         pathSegments: ["Backend", "Functional Programming", "ProFunctor"],
       },
       Semigroup: {
-        content: "",
+        content: [],
         name: "Semigroup",
         pathSegments: ["Backend", "Functional Programming", "Semigroup"],
       },
       Optics: {
         Lens: {
-          content: "",
+          content: [],
           name: "Lens",
           pathSegments: ["Backend", "Functional Programming", "Optics", "Lens"],
         },
         Traversal: {
-          content: "",
+          content: [],
           name: "Traversal",
           pathSegments: [
             "Backend",
@@ -310,7 +337,7 @@ export const guide = {
           ],
         },
         Plated: {
-          content: "",
+          content: [],
           name: "Plated",
           pathSegments: [
             "Backend",
@@ -320,12 +347,12 @@ export const guide = {
           ],
         },
         Iso: {
-          content: "",
+          content: [],
           name: "Iso",
           pathSegments: ["Backend", "Functional Programming", "Optics", "Iso"],
         },
         Prism: {
-          content: "",
+          content: [],
           name: "Prism",
           pathSegments: [
             "Backend",
@@ -335,28 +362,28 @@ export const guide = {
           ],
         },
         Fold: {
-          content: "",
+          content: [],
           name: "Fold",
           pathSegments: ["Backend", "Functional Programming", "Optics", "Fold"],
         },
       },
       Functor: {
-        content: "",
+        content: [],
         name: "Functor",
         pathSegments: ["Backend", "Functional Programming", "Functor"],
       },
       Continuations: {
-        content: "",
+        content: [],
         name: "Continuations",
         pathSegments: ["Backend", "Functional Programming", "Continuations"],
       },
       Divisble: {
-        content: "",
+        content: [],
         name: "Divisble",
         pathSegments: ["Backend", "Functional Programming", "Divisble"],
       },
       "Contravariant Functor": {
-        content: "",
+        content: [],
         name: "Contravariant Functor",
         pathSegments: [
           "Backend",
@@ -365,7 +392,7 @@ export const guide = {
         ],
       },
       "Invariant Functor": {
-        content: "",
+        content: [],
         name: "Invariant Functor",
         pathSegments: [
           "Backend",
@@ -374,22 +401,22 @@ export const guide = {
         ],
       },
       Applicative: {
-        content: "",
+        content: [],
         name: "Applicative",
         pathSegments: ["Backend", "Functional Programming", "Applicative"],
       },
       Recursion: {
-        content: "",
+        content: [],
         name: "Recursion",
         pathSegments: ["Backend", "Functional Programming", "Recursion"],
       },
       Monad: {
-        content: "",
+        content: [],
         name: "Monad",
         pathSegments: ["Backend", "Functional Programming", "Monad"],
       },
       "Monad Transformers": {
-        content: "",
+        content: [],
         name: "Monad Transformers",
         pathSegments: [
           "Backend",
@@ -398,7 +425,7 @@ export const guide = {
         ],
       },
       "Functional Operators on Collections": {
-        content: "",
+        content: [],
         name: "Functional Operators on Collections",
         pathSegments: [
           "Backend",
@@ -407,52 +434,56 @@ export const guide = {
         ],
       },
       "Free Monad": {
-        content: "",
+        content: [],
         name: "Free Monad",
         pathSegments: ["Backend", "Functional Programming", "Free Monad"],
       },
       Monoid: {
-        content: "",
+        content: [],
         name: "Monoid",
         pathSegments: ["Backend", "Functional Programming", "Monoid"],
       },
       Traversable: {
-        content: "",
+        content: [],
         name: "Traversable",
         pathSegments: ["Backend", "Functional Programming", "Traversable"],
       },
       Foldable: {
-        content: "",
+        content: [],
         name: "Foldable",
         pathSegments: ["Backend", "Functional Programming", "Foldable"],
       },
       BiFunctor: {
-        content: "",
+        content: [],
         name: "BiFunctor",
         pathSegments: ["Backend", "Functional Programming", "BiFunctor"],
       },
     },
     Cloud: {
       Kubernetes: {
-        content: "",
+        content: [],
         name: "Kubernetes",
         pathSegments: ["Backend", "Cloud", "Kubernetes"],
       },
-      Docker: { name: "Docker", pathSegments: ["Backend", "Cloud", "Docker"] },
+      Docker: {
+        content: [],
+        name: "Docker",
+        pathSegments: ["Backend", "Cloud", "Docker"],
+      },
       AWS: {
-        content: "",
+        content: [],
         name: "AWS",
         pathSegments: ["Backend", "Cloud", "AWS"],
       },
       Azure: {
-        content: "",
+        content: [],
         name: "Azure",
         pathSegments: ["Backend", "Cloud", "Azure"],
       },
     },
     Frameworks: {
       Play: {
-        content: "Lightbend's Play Essential",
+        content: ["Lightbend's Play Essential"],
         name: "Play",
         pathSegments: ["Backend", "Frameworks", "Play"],
       },
@@ -460,13 +491,14 @@ export const guide = {
     Databases: {
       Relational: {
         Normalisation: {
-          content: "",
+          content: [],
           name: "Normalisation",
           pathSegments: ["Backend", "Databases", "Relational", "Normalisation"],
         },
         "Database Design": {
-          content:
+          content: [
             "SQL Antipatterns: Avoiding the Pitfalls of Database Programming by Karwin",
+          ],
           name: "Database Design",
           pathSegments: [
             "Backend",
@@ -476,23 +508,23 @@ export const guide = {
           ],
         },
         Triggers: {
-          content: "",
+          content: [],
           name: "Triggers",
           pathSegments: ["Backend", "Databases", "Relational", "Triggers"],
         },
         Views: {
-          content: "",
+          content: [],
           name: "Views",
           pathSegments: ["Backend", "Databases", "Relational", "Views"],
         },
         Indexes: {
-          content: "",
+          content: [],
           name: "Indexes",
           pathSegments: ["Backend", "Databases", "Relational", "Indexes"],
         },
         Transactions: {
           ACID: {
-            content: "",
+            content: [],
             name: "ACID",
             pathSegments: [
               "Backend",
@@ -503,7 +535,7 @@ export const guide = {
             ],
           },
           "Isolation Levels": {
-            content: "",
+            content: [],
             name: "Isolation Levels",
             pathSegments: [
               "Backend",
@@ -515,14 +547,14 @@ export const guide = {
           },
         },
         "Foreign Keys": {
-          content: "",
+          content: [],
           name: "Foreign Keys",
           pathSegments: ["Backend", "Databases", "Relational", "Foreign Keys"],
         },
       },
       ORM: {
         "Object-Relational Mismatch": {
-          content: "",
+          content: [],
           name: "Object-Relational Mismatch",
           pathSegments: [
             "Backend",
@@ -535,17 +567,17 @@ export const guide = {
     },
     "Software Architecture": {
       CQRS: {
-        content: "",
+        content: [],
         name: "CQRS",
         pathSegments: ["Backend", "Software Architecture", "CQRS"],
       },
       SOLID: {
-        content: "",
+        content: [],
         name: "SOLID",
         pathSegments: ["Backend", "Software Architecture", "SOLID"],
       },
       "Coupling And Cohesion": {
-        content: "",
+        content: [],
         name: "Coupling And Cohesion",
         pathSegments: [
           "Backend",
@@ -554,7 +586,7 @@ export const guide = {
         ],
       },
       "Enterprise Integration Patterns": {
-        content: "",
+        content: [],
         name: "Enterprise Integration Patterns",
         pathSegments: [
           "Backend",
@@ -563,17 +595,17 @@ export const guide = {
         ],
       },
       "Design Patterns": {
-        content: "Refactoring Guru",
+        content: ["Refactoring Guru"],
         name: "Design Patterns",
         pathSegments: ["Backend", "Software Architecture", "Design Patterns"],
       },
       "Event Sourcing": {
-        content: "",
+        content: [],
         name: "Event Sourcing",
         pathSegments: ["Backend", "Software Architecture", "Event Sourcing"],
       },
       "Clean Architecture": {
-        content: "",
+        content: [],
         name: "Clean Architecture",
         pathSegments: [
           "Backend",
@@ -582,7 +614,7 @@ export const guide = {
         ],
       },
       "Message-driven Microservices": {
-        content: "",
+        content: [],
         name: "Message-driven Microservices",
         pathSegments: [
           "Backend",
@@ -591,7 +623,7 @@ export const guide = {
         ],
       },
       "3-tier Architecture": {
-        content: "",
+        content: [],
         name: "3-tier Architecture",
         pathSegments: [
           "Backend",
@@ -600,25 +632,25 @@ export const guide = {
         ],
       },
       DDD: {
-        content: "",
+        content: [],
         name: "DDD",
         pathSegments: ["Backend", "Software Architecture", "DDD"],
       },
     },
     "General Knowledge": {
       REST: {
-        content: "",
+        content: [],
         name: "REST",
         pathSegments: ["Backend", "General Knowledge", "REST"],
       },
       Encryption: {
-        content: "",
+        content: [],
         name: "Encryption",
         pathSegments: ["Backend", "General Knowledge", "Encryption"],
       },
       "Data Structures": {
         "TreeMap and TreeSet": {
-          content: "",
+          content: [],
           name: "TreeMap and TreeSet",
           pathSegments: [
             "Backend",
@@ -628,7 +660,7 @@ export const guide = {
           ],
         },
         "HashMap and HashSet": {
-          content: "",
+          content: [],
           name: "HashMap and HashSet",
           pathSegments: [
             "Backend",
@@ -638,7 +670,7 @@ export const guide = {
           ],
         },
         Vector: {
-          content: "",
+          content: [],
           name: "Vector",
           pathSegments: [
             "Backend",
@@ -648,7 +680,7 @@ export const guide = {
           ],
         },
         LinkedList: {
-          content: "",
+          content: [],
           name: "LinkedList",
           pathSegments: [
             "Backend",
@@ -659,13 +691,13 @@ export const guide = {
         },
       },
       SSL: {
-        content: "",
+        content: [],
         name: "SSL",
         pathSegments: ["Backend", "General Knowledge", "SSL"],
       },
       "Threads and Locks": {
         Deadlocks: {
-          content: "",
+          content: [],
           name: "Deadlocks",
           pathSegments: [
             "Backend",
@@ -676,13 +708,13 @@ export const guide = {
         },
       },
       HTTP: {
-        content: "",
+        content: [],
         name: "HTTP",
         pathSegments: ["Backend", "General Knowledge", "HTTP"],
       },
       Generics: {
         "Coveriance and Contravariance and Invariance": {
-          content: "",
+          content: [],
           name: "Coveriance and Contravariance and Invariance",
           pathSegments: [
             "Backend",
@@ -696,7 +728,7 @@ export const guide = {
     Streaming: {
       "Stateful Operators": {
         Windowed: {
-          content: "",
+          content: [],
           name: "Windowed",
           pathSegments: [
             "Backend",
@@ -706,7 +738,7 @@ export const guide = {
           ],
         },
         Tables: {
-          content: "",
+          content: [],
           name: "Tables",
           pathSegments: [
             "Backend",
@@ -717,32 +749,32 @@ export const guide = {
         },
       },
       "Kafka Streams": {
-        content: "",
+        content: [],
         name: "Kafka Streams",
         pathSegments: ["Backend", "Streaming", "Kafka Streams"],
       },
       "Difference Hot and Cold": {
-        content: "",
+        content: [],
         name: "Difference Hot and Cold",
         pathSegments: ["Backend", "Streaming", "Difference Hot and Cold"],
       },
       "Akka Streams": {
-        content: "",
+        content: [],
         name: "Akka Streams",
         pathSegments: ["Backend", "Streaming", "Akka Streams"],
       },
       "Stateless Operators": {
-        content: "",
+        content: [],
         name: "Stateless Operators",
         pathSegments: ["Backend", "Streaming", "Stateless Operators"],
       },
       CDC: {
-        content: "",
+        content: [],
         name: "CDC",
         pathSegments: ["Backend", "Streaming", "CDC"],
       },
       Backpressure: {
-        content: "",
+        content: [],
         name: "Backpressure",
         pathSegments: ["Backend", "Streaming", "Backpressure"],
       },
@@ -751,35 +783,35 @@ export const guide = {
   Frontend: {
     Tools: {
       "NPM and Yarn": {
-        content: "",
+        content: [],
         name: "NPM and Yarn",
         pathSegments: ["Frontend", "Tools", "NPM and Yarn"],
       },
       Git: {
-        content: "",
+        content: [],
         name: "Git",
         pathSegments: ["Frontend", "Tools", "Git"],
       },
       CICD: {
         "Azure Pipeline": {
-          content: "",
+          content: [],
           name: "Azure Pipeline",
           pathSegments: ["Frontend", "Tools", "CICD", "Azure Pipeline"],
         },
         "Github Actions": {
-          content: "",
+          content: [],
           name: "Github Actions",
           pathSegments: ["Frontend", "Tools", "CICD", "Github Actions"],
         },
       },
       Scaffolding: {
         Yeoman: {
-          content: "",
+          content: [],
           name: "Yeoman",
           pathSegments: ["Frontend", "Tools", "Scaffolding", "Yeoman"],
         },
         "Angular Schematics": {
-          content: "",
+          content: [],
           name: "Angular Schematics",
           pathSegments: [
             "Frontend",
@@ -790,14 +822,14 @@ export const guide = {
         },
       },
       "Chrome Dev Tools": {
-        content: "",
+        content: [],
         name: "Chrome Dev Tools",
         pathSegments: ["Frontend", "Tools", "Chrome Dev Tools"],
       },
     },
     "Programming Languages": {
       "CSS and LESS and SASS": {
-        content: "",
+        content: [],
         name: "CSS and LESS and SASS",
         pathSegments: [
           "Frontend",
@@ -806,72 +838,72 @@ export const guide = {
         ],
       },
       HTML: {
-        content: "",
+        content: [],
         name: "HTML",
         pathSegments: ["Frontend", "Programming Languages", "HTML"],
       },
       Typescript: {
-        content: "",
+        content: [],
         name: "Typescript",
         pathSegments: ["Frontend", "Programming Languages", "Typescript"],
       },
       Node: {
-        content: "",
+        content: [],
         name: "Node",
         pathSegments: ["Frontend", "Programming Languages", "Node"],
       },
       Javascript: {
-        content: "",
+        content: [],
         name: "Javascript",
         pathSegments: ["Frontend", "Programming Languages", "Javascript"],
       },
     },
     Cloud: {
       "Azure Functions": {
-        content: "",
+        content: [],
         name: "Azure Functions",
         pathSegments: ["Frontend", "Cloud", "Azure Functions"],
       },
       Docker: {
-        content: "",
+        content: [],
         name: "Docker",
         pathSegments: ["Frontend", "Cloud", "Docker"],
       },
       NGINX: {
-        content: "",
+        content: [],
         name: "NGINX",
         pathSegments: ["Frontend", "Cloud", "NGINX"],
       },
       Apache: {
-        content: "",
+        content: [],
         name: "Apache",
         pathSegments: ["Frontend", "Cloud", "Apache"],
       },
       AWS: {
-        content: "",
+        content: [],
         name: "AWS",
         pathSegments: ["Frontend", "Cloud", "AWS"],
       },
     },
     Frameworks: {
       Angular: {
-        content: "",
+        content: [],
         name: "Angular",
         pathSegments: ["Frontend", "Frameworks", "Angular"],
       },
       React: {
-        content: "",
+        content: [],
         name: "React",
         pathSegments: ["Frontend", "Frameworks", "React"],
       },
       Monorepos: {
         Nx: {
-          content: "",
+          content: [],
           name: "Nx",
           pathSegments: ["Frontend", "Frameworks", "Monorepos", "Nx"],
         },
         Lerna: {
-          content: "",
+          content: [],
           name: "Lerna",
           pathSegments: ["Frontend", "Frameworks", "Monorepos", "Lerna"],
         },
@@ -880,7 +912,7 @@ export const guide = {
     "Software Architecture": {
       Async: {
         Callbacks: {
-          content: "",
+          content: [],
           name: "Callbacks",
           pathSegments: [
             "Frontend",
@@ -890,7 +922,7 @@ export const guide = {
           ],
         },
         "async and await": {
-          content: "",
+          content: [],
           name: "async and await",
           pathSegments: [
             "Frontend",
@@ -900,7 +932,7 @@ export const guide = {
           ],
         },
         Promises: {
-          content: "",
+          content: [],
           name: "Promises",
           pathSegments: [
             "Frontend",
@@ -910,7 +942,7 @@ export const guide = {
           ],
         },
         Generators: {
-          content: "",
+          content: [],
           name: "Generators",
           pathSegments: [
             "Frontend",
@@ -922,7 +954,7 @@ export const guide = {
       },
       "State Management": {
         MobX: {
-          content: "",
+          content: [],
           name: "MobX",
           pathSegments: [
             "Frontend",
@@ -933,7 +965,7 @@ export const guide = {
         },
         Redux: {
           "Redux Toolkit": {
-            content: "",
+            content: [],
             name: "Redux Toolkit",
             pathSegments: [
               "Frontend",
@@ -943,7 +975,7 @@ export const guide = {
               "Redux Toolkit",
             ],
           },
-          content: "",
+          content: [],
           name: "Redux",
           pathSegments: [
             "Frontend",
@@ -953,7 +985,7 @@ export const guide = {
           ],
         },
         NgRx: {
-          content: "",
+          content: [],
           name: "NgRx",
           pathSegments: [
             "Frontend",
@@ -964,7 +996,7 @@ export const guide = {
         },
       },
       "Progressive Web Apps": {
-        content: "",
+        content: [],
         name: "Progressive Web Apps",
         pathSegments: [
           "Frontend",
@@ -973,34 +1005,34 @@ export const guide = {
         ],
       },
       "Web Workers": {
-        content: "",
+        content: [],
         name: "Web Workers",
         pathSegments: ["Frontend", "Software Architecture", "Web Workers"],
       },
       GraphQL: {
-        content: "",
+        content: [],
         name: "GraphQL",
         pathSegments: ["Frontend", "Software Architecture", "GraphQL"],
       },
       "Service Workers": {
-        content: "",
+        content: [],
         name: "Service Workers",
         pathSegments: ["Frontend", "Software Architecture", "Service Workers"],
       },
     },
     "Functional Programming": {
       Recursion: {
-        content: "",
+        content: [],
         name: "Recursion",
         pathSegments: ["Frontend", "Functional Programming", "Recursion"],
       },
       Composition: {
-        content: "",
+        content: [],
         name: "Composition",
         pathSegments: ["Frontend", "Functional Programming", "Composition"],
       },
       "Functional Operators": {
-        content: "",
+        content: [],
         name: "Functional Operators",
         pathSegments: [
           "Frontend",
@@ -1011,12 +1043,12 @@ export const guide = {
     },
     Streaming: {
       Websockets: {
-        content: "",
+        content: [],
         name: "Websockets",
         pathSegments: ["Frontend", "Streaming", "Websockets"],
       },
       RxJs: {
-        content: "",
+        content: [],
         name: "RxJs",
         pathSegments: ["Frontend", "Streaming", "RxJs"],
       },
