@@ -9,8 +9,8 @@ interface Props {
 const cardStyle = {
   display: "block",
   padding: "0.1rem 1rem 1rem",
-  margin: "0.5rem 0 1rem"
-}
+  margin: "0.5rem 0 1rem",
+};
 
 const ContentListItem: React.FC<Props> = ({ pathSegments, node }) => {
   const [isFolded, setIsFolded] = React.useState(true);
@@ -22,11 +22,11 @@ const ContentListItem: React.FC<Props> = ({ pathSegments, node }) => {
   const details = isFolded ? (
     ""
   ) : (
-    <div className="aside_card" style={cardStyle}>
-      {node.paragraph.map((text) => (
-        <p>{text}</p>
-      ))}
-    </div>
+    <div
+      className="aside_card"
+      style={cardStyle}
+      dangerouslySetInnerHTML={{ __html: node.section }}
+    ></div>
   );
 
   return (

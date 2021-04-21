@@ -1,14 +1,15 @@
 import { Node } from "markdown_tree";
 import { CustomNode } from "./types.ts";
 
-const getContent = (n: Node): string => {
-  if (n?.props?.type === "paragraph") {
-    const texts = n?.children?.filter((c) => c.props?.type === "text") ?? [];
-    const text = texts.map((t) => (t?.props as any).content).join(" ");
-    return text;
-  }
-  return "*not p element, not yet supported*";
-};
+// const getContent = (n: Node): string => {
+//   if (n?.props?.type === "paragraph") {
+//     const texts = n?.children?.filter((c) => c.props?.type === "text") ?? [];
+//     const text = texts.map((t) => (t?.props as any).content).join(" ");
+//     return text;
+//   }
+//   console.log(n.xml("html", Node.HTMLHelper()))
+//   return "*not p element, not yet supported*";
+// };
 
 const isCustomNode = (n: Node | CustomNode): n is CustomNode => {
   return (n as CustomNode).type && (n as CustomNode).type === "topic-content";
@@ -24,10 +25,11 @@ const reduceNodesToGroup = (
   }
   const last = acc[acc.length - 1];
   if (last) {
-    if (!last.paragraph) {
-      last.paragraph = [];
-    }
-    last.paragraph.push(getContent(next));
+    // if (!last.paragraph) {
+    //   last.paragraph = "";
+    // }
+    // last.paragraph.push(getContent(next));
+    last.section += next.xml("html", Node.HTMLHelper());
   } else {
     console.error("no group exists", acc, next);
   }
@@ -51,7 +53,7 @@ export function digForHeadingContent(n: Node): CustomNode[] {
       const heading =
         child?.props?.type === "heading" && getHeadingContent(child);
       return heading
-        ? { type: "topic-content", heading, paragraph: [] }
+        ? { type: "topic-content", heading, section: "" }
         : child;
     })
     .reduce(reduceNodesToGroup, []);

@@ -1,7 +1,7 @@
 export interface CustomNode {
   type: "topic-content";
   heading: string;
-  paragraph: string[];
+  section: string;
 }
 
 export interface RawFileData {
