@@ -12,11 +12,17 @@ interface Props {
 
 export const contentToListItems = (pathSegments: string[]) => (
   c: CustomNode
-) => (
-  <li style={{ cursor: "help" }} title={c.paragraph.join("\n")}>
-    📚 {c.heading} <a href={pathSegments.join("/")}>details</a>
-  </li>
-);
+) => {
+  const onClick: React.DOMAttributes<HTMLAnchorElement>["onClick"] = (ev) => {
+    ev.preventDefault();
+    alert("not yet implemented");
+  }
+  return (
+    <li style={{ cursor: "help" }} title={c.paragraph.join("\n")}>
+      📚 {c.heading} <a onClick={onClick} href={pathSegments.join("/")}>details</a>
+    </li>
+  )
+};
 
 const FoldableListItem: React.FC<Props> = ({ label, content, tree }) => {
   const [isFolded, setIsFolded] = React.useState(true);
