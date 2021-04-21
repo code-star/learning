@@ -3,12 +3,13 @@ import RenderTree from "./_RenderTree.tsx";
 
 interface Props {
   label: string;
+  content: string;
   tree: {
     [key: string]: any;
   };
 }
 
-const FoldableListItem: React.FC<Props> = ({ label, tree }) => {
+const FoldableListItem: React.FC<Props> = ({ label, content, tree }) => {
   const [isFolded, setIsFolded] = React.useState(true);
 
   const clickableLabel = (
@@ -22,11 +23,15 @@ const FoldableListItem: React.FC<Props> = ({ label, tree }) => {
     </span>
   );
 
+  // TODO deduplicate with similar snippet in RenderTree
+  const contentStr = content ? <li>📓 {content}</li> : "";
+
   const result = isFolded ? (
     ""
   ) : (
     <ul>
       <RenderTree topicTree={tree} />
+      {contentStr}
     </ul>
   );
 

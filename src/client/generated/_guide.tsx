@@ -1,1 +1,1025 @@
-export const guide = {"Backend":{"Tooling":{"Git.md":{"name":"Git.md","pathSegments":["Backend","Tooling","Git.md"]}},"Programming Languages":{"Kotlin.md":{"name":"Kotlin.md","content":"","pathSegments":["Backend","Programming Languages","Kotlin.md"]},"Java.md":{"name":"Java.md","content":"OCP Study Guide by Boyarsky and Selikoff","pathSegments":["Backend","Programming Languages","Java.md"]},"Scala.md":{"name":"Scala.md","content":"Programming in Scala by Odersky","pathSegments":["Backend","Programming Languages","Scala.md"]},"Typescript.md":{"name":"Typescript.md","content":"","pathSegments":["Backend","Programming Languages","Typescript.md"]},"Bash.md":{"name":"Bash.md","content":"","pathSegments":["Backend","Programming Languages","Bash.md"]},"Pyton.md":{"name":"Pyton.md","content":"Ordina Pythoneers knowledge tree","pathSegments":["Backend","Programming Languages","Pyton.md"]}},"Testing":{"Dependency Injection.md":{"name":"Dependency Injection.md","content":"","pathSegments":["Backend","Testing","Dependency Injection.md"]},"End-to-end Tests.md":{"name":"End-to-end Tests.md","content":"","pathSegments":["Backend","Testing","End-to-end Tests.md"]},"Test Pyramid.md":{"name":"Test Pyramid.md","content":"","pathSegments":["Backend","Testing","Test Pyramid.md"]},"Integration Tests.md":{"name":"Integration Tests.md","content":"","pathSegments":["Backend","Testing","Integration Tests.md"]},"Mocking.md":{"name":"Mocking.md","content":"","pathSegments":["Backend","Testing","Mocking.md"]},"Given When Then.md":{"name":"Given When Then.md","content":"","pathSegments":["Backend","Testing","Given When Then.md"]}},"Infrastructure":{"Infrastructure As Code":{"AWS CDK.md":{"name":"AWS CDK.md","content":"","pathSegments":["Backend","Infrastructure","Infrastructure As Code","AWS CDK.md"]},"Terraform.md":{"name":"Terraform.md","content":"","pathSegments":["Backend","Infrastructure","Infrastructure As Code","Terraform.md"]},"Ansible.md":{"name":"Ansible.md","content":"","pathSegments":["Backend","Infrastructure","Infrastructure As Code","Ansible.md"]}},"CICD":{"CircleCI.md":{"name":"CircleCI.md","content":"","pathSegments":["Backend","Infrastructure","CICD","CircleCI.md"]},"Github Actions.md":{"name":"Github Actions.md","content":"","pathSegments":["Backend","Infrastructure","CICD","Github Actions.md"]}}},"Distributed Systems":{"Partitioning or Sharding.md":{"name":"Partitioning or Sharding.md","content":"","pathSegments":["Backend","Distributed Systems","Partitioning or Sharding.md"]},"CAP Theorem.md":{"name":"CAP Theorem.md","content":"","pathSegments":["Backend","Distributed Systems","CAP Theorem.md"]},"Consensus Algorithms.md":{"name":"Consensus Algorithms.md","content":"","pathSegments":["Backend","Distributed Systems","Consensus Algorithms.md"]},"Replication":{"Multi-leader.md":{"name":"Multi-leader.md","content":"","pathSegments":["Backend","Distributed Systems","Replication","Multi-leader.md"]},"Leader Follower.md":{"name":"Leader Follower.md","content":"","pathSegments":["Backend","Distributed Systems","Replication","Leader Follower.md"]},"Leaderless.md":{"name":"Leaderless.md","content":"Cassandra for developers","pathSegments":["Backend","Distributed Systems","Replication","Leaderless.md"]}},"Eventual Consistency.md":{"name":"Eventual Consistency.md","content":"","pathSegments":["Backend","Distributed Systems","Eventual Consistency.md"]},"Distributed Transactions.md":{"name":"Distributed Transactions.md","content":"","pathSegments":["Backend","Distributed Systems","Distributed Transactions.md"]}},"Messaging":{"Actors":{"Akka.md":{"name":"Akka.md","content":"","pathSegments":["Backend","Messaging","Actors","Akka.md"]}},"Distributed Messaging":{"Kafka.md":{"name":"Kafka.md","content":"Kafka: The Definitive Guide by Neha Narkhede","pathSegments":["Backend","Messaging","Distributed Messaging","Kafka.md"]},"Kafka":{"Kafka Streams.md":{"name":"Kafka Streams.md","content":"Kafka Streams for Data Processing (Udemy)","pathSegments":["Backend","Messaging","Distributed Messaging","Kafka","Kafka Streams.md"]},"Administration.md":{"name":"Administration.md","content":"Kafka Cluster Setup and Administration (Udemy)","pathSegments":["Backend","Messaging","Distributed Messaging","Kafka","Administration.md"]},"Kafka Connect.md":{"name":"Kafka Connect.md","content":"Kafka Connect Hands-on Learning (Udemy)","pathSegments":["Backend","Messaging","Distributed Messaging","Kafka","Kafka Connect.md"]},"Security.md":{"name":"Security.md","content":"Kafka Security (Udemy)","pathSegments":["Backend","Messaging","Distributed Messaging","Kafka","Security.md"]},"Schema Registry.md":{"name":"Schema Registry.md","content":"Confluent Schema Registry & REST Proxy (Udemy)","pathSegments":["Backend","Messaging","Distributed Messaging","Kafka","Schema Registry.md"]}}},"Traditional MQ":{"RabbitMQ.md":{"name":"RabbitMQ.md","content":"","pathSegments":["Backend","Messaging","Traditional MQ","RabbitMQ.md"]},"JMS.md":{"name":"JMS.md","content":"","pathSegments":["Backend","Messaging","Traditional MQ","JMS.md"]}}},"Functional Programming.md":{"name":"Functional Programming.md","content":"Functional Programming in Scala by Chiusano and Bjarnason","pathSegments":["Backend","Functional Programming.md"]},"Cloud":{"Kubernetes.md":{"name":"Kubernetes.md","content":"","pathSegments":["Backend","Cloud","Kubernetes.md"]},"Docker.md":{"name":"Docker.md","pathSegments":["Backend","Cloud","Docker.md"]},"AWS.md":{"name":"AWS.md","content":"","pathSegments":["Backend","Cloud","AWS.md"]},"Azure.md":{"name":"Azure.md","content":"","pathSegments":["Backend","Cloud","Azure.md"]}},"Frameworks":{"Play.md":{"name":"Play.md","content":"Lightbend's Play Essential","pathSegments":["Backend","Frameworks","Play.md"]}},"Databases":{"Relational":{"Normalisation.md":{"name":"Normalisation.md","content":"","pathSegments":["Backend","Databases","Relational","Normalisation.md"]},"Database Design.md":{"name":"Database Design.md","content":"SQL Antipatterns: Avoiding the Pitfalls of Database Programming by Karwin","pathSegments":["Backend","Databases","Relational","Database Design.md"]},"Triggers.md":{"name":"Triggers.md","content":"","pathSegments":["Backend","Databases","Relational","Triggers.md"]},"Views.md":{"name":"Views.md","content":"","pathSegments":["Backend","Databases","Relational","Views.md"]},"Indexes.md":{"name":"Indexes.md","content":"","pathSegments":["Backend","Databases","Relational","Indexes.md"]},"Transactions":{"ACID.md":{"name":"ACID.md","content":"","pathSegments":["Backend","Databases","Relational","Transactions","ACID.md"]},"Isolation Levels.md":{"name":"Isolation Levels.md","content":"","pathSegments":["Backend","Databases","Relational","Transactions","Isolation Levels.md"]}},"Foreign Keys.md":{"name":"Foreign Keys.md","content":"","pathSegments":["Backend","Databases","Relational","Foreign Keys.md"]}},"ORM":{"Object-Relational Mismatch.md":{"name":"Object-Relational Mismatch.md","content":"","pathSegments":["Backend","Databases","ORM","Object-Relational Mismatch.md"]}}},"Software Architecture":{"CQRS.md":{"name":"CQRS.md","content":"","pathSegments":["Backend","Software Architecture","CQRS.md"]},"SOLID.md":{"name":"SOLID.md","content":"","pathSegments":["Backend","Software Architecture","SOLID.md"]},"Coupling And Cohesion.md":{"name":"Coupling And Cohesion.md","content":"","pathSegments":["Backend","Software Architecture","Coupling And Cohesion.md"]},"Enterprise Integration Patterns.md":{"name":"Enterprise Integration Patterns.md","content":"","pathSegments":["Backend","Software Architecture","Enterprise Integration Patterns.md"]},"Design Patterns.md":{"name":"Design Patterns.md","content":"Refactoring Guru","pathSegments":["Backend","Software Architecture","Design Patterns.md"]},"Event Sourcing.md":{"name":"Event Sourcing.md","content":"","pathSegments":["Backend","Software Architecture","Event Sourcing.md"]},"Clean Architecture.md":{"name":"Clean Architecture.md","content":"","pathSegments":["Backend","Software Architecture","Clean Architecture.md"]},"Message-driven Microservices.md":{"name":"Message-driven Microservices.md","content":"","pathSegments":["Backend","Software Architecture","Message-driven Microservices.md"]},"3-tier Architecture.md":{"name":"3-tier Architecture.md","content":"","pathSegments":["Backend","Software Architecture","3-tier Architecture.md"]},"DDD.md":{"name":"DDD.md","content":"","pathSegments":["Backend","Software Architecture","DDD.md"]}},"General Knowledge":{"REST.md":{"name":"REST.md","content":"","pathSegments":["Backend","General Knowledge","REST.md"]},"Encryption.md":{"name":"Encryption.md","content":"","pathSegments":["Backend","General Knowledge","Encryption.md"]},"Data Structures":{"TreeMap and TreeSet.md":{"name":"TreeMap and TreeSet.md","content":"","pathSegments":["Backend","General Knowledge","Data Structures","TreeMap and TreeSet.md"]},"HashMap and HashSet.md":{"name":"HashMap and HashSet.md","content":"","pathSegments":["Backend","General Knowledge","Data Structures","HashMap and HashSet.md"]},"Vector.md":{"name":"Vector.md","content":"","pathSegments":["Backend","General Knowledge","Data Structures","Vector.md"]},"LinkedList.md":{"name":"LinkedList.md","content":"","pathSegments":["Backend","General Knowledge","Data Structures","LinkedList.md"]}},"SSL.md":{"name":"SSL.md","content":"","pathSegments":["Backend","General Knowledge","SSL.md"]},"Threads and Locks":{"Deadlocks.md":{"name":"Deadlocks.md","content":"","pathSegments":["Backend","General Knowledge","Threads and Locks","Deadlocks.md"]}},"HTTP.md":{"name":"HTTP.md","content":"","pathSegments":["Backend","General Knowledge","HTTP.md"]},"Generics":{"Coveriance and Contravariance and Invariance.md":{"name":"Coveriance and Contravariance and Invariance.md","content":"","pathSegments":["Backend","General Knowledge","Generics","Coveriance and Contravariance and Invariance.md"]}}},"Functional Programming":{"ProFunctor.md":{"name":"ProFunctor.md","content":"","pathSegments":["Backend","Functional Programming","ProFunctor.md"]},"Semigroup.md":{"name":"Semigroup.md","content":"","pathSegments":["Backend","Functional Programming","Semigroup.md"]},"Optics":{"Lens.md":{"name":"Lens.md","content":"","pathSegments":["Backend","Functional Programming","Optics","Lens.md"]},"Traversal.md":{"name":"Traversal.md","content":"","pathSegments":["Backend","Functional Programming","Optics","Traversal.md"]},"Plated.md":{"name":"Plated.md","content":"","pathSegments":["Backend","Functional Programming","Optics","Plated.md"]},"Iso.md":{"name":"Iso.md","content":"","pathSegments":["Backend","Functional Programming","Optics","Iso.md"]},"Prism.md":{"name":"Prism.md","content":"","pathSegments":["Backend","Functional Programming","Optics","Prism.md"]},"Fold.md":{"name":"Fold.md","content":"","pathSegments":["Backend","Functional Programming","Optics","Fold.md"]}},"Functor.md":{"name":"Functor.md","content":"","pathSegments":["Backend","Functional Programming","Functor.md"]},"Continuations.md":{"name":"Continuations.md","content":"","pathSegments":["Backend","Functional Programming","Continuations.md"]},"Divisble.md":{"name":"Divisble.md","content":"","pathSegments":["Backend","Functional Programming","Divisble.md"]},"Contravariant Functor.md":{"name":"Contravariant Functor.md","content":"","pathSegments":["Backend","Functional Programming","Contravariant Functor.md"]},"Invariant Functor.md":{"name":"Invariant Functor.md","content":"","pathSegments":["Backend","Functional Programming","Invariant Functor.md"]},"Applicative.md":{"name":"Applicative.md","content":"","pathSegments":["Backend","Functional Programming","Applicative.md"]},"Recursion.md":{"name":"Recursion.md","content":"","pathSegments":["Backend","Functional Programming","Recursion.md"]},"Monad.md":{"name":"Monad.md","content":"","pathSegments":["Backend","Functional Programming","Monad.md"]},"Monad Transformers.md":{"name":"Monad Transformers.md","content":"","pathSegments":["Backend","Functional Programming","Monad Transformers.md"]},"Functional Operators on Collections.md":{"name":"Functional Operators on Collections.md","content":"","pathSegments":["Backend","Functional Programming","Functional Operators on Collections.md"]},"Free Monad.md":{"name":"Free Monad.md","content":"","pathSegments":["Backend","Functional Programming","Free Monad.md"]},"Monoid.md":{"name":"Monoid.md","content":"","pathSegments":["Backend","Functional Programming","Monoid.md"]},"Traversable.md":{"name":"Traversable.md","content":"","pathSegments":["Backend","Functional Programming","Traversable.md"]},"Foldable.md":{"name":"Foldable.md","content":"","pathSegments":["Backend","Functional Programming","Foldable.md"]},"BiFunctor.md":{"name":"BiFunctor.md","content":"","pathSegments":["Backend","Functional Programming","BiFunctor.md"]}},"Distributed Systems.md":{"name":"Distributed Systems.md","content":"Designing Data-Intensive Applications by Martin Kleppmann","pathSegments":["Backend","Distributed Systems.md"]},"Streaming":{"Stateful Operators":{"Windowed.md":{"name":"Windowed.md","content":"","pathSegments":["Backend","Streaming","Stateful Operators","Windowed.md"]},"Tables.md":{"name":"Tables.md","content":"","pathSegments":["Backend","Streaming","Stateful Operators","Tables.md"]}},"Kafka Streams.md":{"name":"Kafka Streams.md","content":"","pathSegments":["Backend","Streaming","Kafka Streams.md"]},"Difference Hot and Cold.md":{"name":"Difference Hot and Cold.md","content":"","pathSegments":["Backend","Streaming","Difference Hot and Cold.md"]},"Akka Streams.md":{"name":"Akka Streams.md","content":"","pathSegments":["Backend","Streaming","Akka Streams.md"]},"Stateless Operators.md":{"name":"Stateless Operators.md","content":"","pathSegments":["Backend","Streaming","Stateless Operators.md"]},"CDC.md":{"name":"CDC.md","content":"","pathSegments":["Backend","Streaming","CDC.md"]},"Backpressure.md":{"name":"Backpressure.md","content":"","pathSegments":["Backend","Streaming","Backpressure.md"]}}},"Frontend":{"Tools":{"NPM and Yarn.md":{"name":"NPM and Yarn.md","content":"","pathSegments":["Frontend","Tools","NPM and Yarn.md"]},"Git.md":{"name":"Git.md","content":"","pathSegments":["Frontend","Tools","Git.md"]},"CICD":{"Azure Pipeline.md":{"name":"Azure Pipeline.md","content":"","pathSegments":["Frontend","Tools","CICD","Azure Pipeline.md"]},"Github Actions.md":{"name":"Github Actions.md","content":"","pathSegments":["Frontend","Tools","CICD","Github Actions.md"]}},"Scaffolding":{"Yeoman.md":{"name":"Yeoman.md","content":"","pathSegments":["Frontend","Tools","Scaffolding","Yeoman.md"]},"Angular Schematics.md":{"name":"Angular Schematics.md","content":"","pathSegments":["Frontend","Tools","Scaffolding","Angular Schematics.md"]}},"Chrome Dev Tools.md":{"name":"Chrome Dev Tools.md","content":"","pathSegments":["Frontend","Tools","Chrome Dev Tools.md"]}},"Programming Languages":{"CSS and LESS and SASS.md":{"name":"CSS and LESS and SASS.md","content":"","pathSegments":["Frontend","Programming Languages","CSS and LESS and SASS.md"]},"HTML.md":{"name":"HTML.md","content":"","pathSegments":["Frontend","Programming Languages","HTML.md"]},"Typescript.md":{"name":"Typescript.md","content":"","pathSegments":["Frontend","Programming Languages","Typescript.md"]},"Node.md":{"name":"Node.md","content":"","pathSegments":["Frontend","Programming Languages","Node.md"]},"Javascript.md":{"name":"Javascript.md","content":"","pathSegments":["Frontend","Programming Languages","Javascript.md"]}},"Cloud":{"Azure Functions.md":{"name":"Azure Functions.md","content":"","pathSegments":["Frontend","Cloud","Azure Functions.md"]},"Docker.md":{"name":"Docker.md","content":"","pathSegments":["Frontend","Cloud","Docker.md"]},"NGINX.md":{"name":"NGINX.md","content":"","pathSegments":["Frontend","Cloud","NGINX.md"]},"Apache.md":{"name":"Apache.md","content":"","pathSegments":["Frontend","Cloud","Apache.md"]},"AWS.md":{"name":"AWS.md","content":"","pathSegments":["Frontend","Cloud","AWS.md"]}},"Frameworks":{"Angular.md":{"name":"Angular.md","content":"","pathSegments":["Frontend","Frameworks","Angular.md"]},"React.md":{"name":"React.md","content":"","pathSegments":["Frontend","Frameworks","React.md"]},"Monorepos":{"Nx.md":{"name":"Nx.md","content":"","pathSegments":["Frontend","Frameworks","Monorepos","Nx.md"]},"Lerna.md":{"name":"Lerna.md","content":"","pathSegments":["Frontend","Frameworks","Monorepos","Lerna.md"]}}},"Software Architecture":{"Async":{"Callbacks.md":{"name":"Callbacks.md","content":"","pathSegments":["Frontend","Software Architecture","Async","Callbacks.md"]},"async and await.md":{"name":"async and await.md","content":"","pathSegments":["Frontend","Software Architecture","Async","async and await.md"]},"Promises.md":{"name":"Promises.md","content":"","pathSegments":["Frontend","Software Architecture","Async","Promises.md"]},"Generators.md":{"name":"Generators.md","content":"","pathSegments":["Frontend","Software Architecture","Async","Generators.md"]}},"State Management":{"MobX.md":{"name":"MobX.md","content":"","pathSegments":["Frontend","Software Architecture","State Management","MobX.md"]},"Redux":{"Redux Toolkit.md":{"name":"Redux Toolkit.md","content":"","pathSegments":["Frontend","Software Architecture","State Management","Redux","Redux Toolkit.md"]}},"Redux.md":{"name":"Redux.md","content":"","pathSegments":["Frontend","Software Architecture","State Management","Redux.md"]},"NgRx.md":{"name":"NgRx.md","content":"","pathSegments":["Frontend","Software Architecture","State Management","NgRx.md"]}},"Progressive Web Apps.md":{"name":"Progressive Web Apps.md","content":"","pathSegments":["Frontend","Software Architecture","Progressive Web Apps.md"]},"Web Workers.md":{"name":"Web Workers.md","content":"","pathSegments":["Frontend","Software Architecture","Web Workers.md"]},"GraphQL.md":{"name":"GraphQL.md","content":"","pathSegments":["Frontend","Software Architecture","GraphQL.md"]},"Service Workers.md":{"name":"Service Workers.md","content":"","pathSegments":["Frontend","Software Architecture","Service Workers.md"]}},"Functional Programming":{"Recursion.md":{"name":"Recursion.md","content":"","pathSegments":["Frontend","Functional Programming","Recursion.md"]},"Composition.md":{"name":"Composition.md","content":"","pathSegments":["Frontend","Functional Programming","Composition.md"]},"Functional Operators.md":{"name":"Functional Operators.md","content":"","pathSegments":["Frontend","Functional Programming","Functional Operators.md"]}},"Streaming":{"Websockets.md":{"name":"Websockets.md","content":"","pathSegments":["Frontend","Streaming","Websockets.md"]},"RxJs.md":{"name":"RxJs.md","content":"","pathSegments":["Frontend","Streaming","RxJs.md"]}}}};
+export const guide = {
+  Backend: {
+    Tooling: {
+      Git: { name: "Git", pathSegments: ["Backend", "Tooling", "Git"] },
+    },
+    "Programming Languages": {
+      Kotlin: {
+        content: "",
+        name: "Kotlin",
+        pathSegments: ["Backend", "Programming Languages", "Kotlin"],
+      },
+      Java: {
+        content: "OCP Study Guide by Boyarsky and Selikoff",
+        name: "Java",
+        pathSegments: ["Backend", "Programming Languages", "Java"],
+      },
+      Scala: {
+        content: "Programming in Scala by Odersky",
+        name: "Scala",
+        pathSegments: ["Backend", "Programming Languages", "Scala"],
+      },
+      Typescript: {
+        content: "",
+        name: "Typescript",
+        pathSegments: ["Backend", "Programming Languages", "Typescript"],
+      },
+      Bash: {
+        content: "",
+        name: "Bash",
+        pathSegments: ["Backend", "Programming Languages", "Bash"],
+      },
+      Pyton: {
+        content: "Ordina Pythoneers knowledge tree",
+        name: "Pyton",
+        pathSegments: ["Backend", "Programming Languages", "Pyton"],
+      },
+    },
+    Testing: {
+      "Dependency Injection": {
+        content: "",
+        name: "Dependency Injection",
+        pathSegments: ["Backend", "Testing", "Dependency Injection"],
+      },
+      "End-to-end Tests": {
+        content: "",
+        name: "End-to-end Tests",
+        pathSegments: ["Backend", "Testing", "End-to-end Tests"],
+      },
+      "Test Pyramid": {
+        content: "",
+        name: "Test Pyramid",
+        pathSegments: ["Backend", "Testing", "Test Pyramid"],
+      },
+      "Integration Tests": {
+        content: "",
+        name: "Integration Tests",
+        pathSegments: ["Backend", "Testing", "Integration Tests"],
+      },
+      Mocking: {
+        content: "",
+        name: "Mocking",
+        pathSegments: ["Backend", "Testing", "Mocking"],
+      },
+      "Given When Then": {
+        content: "",
+        name: "Given When Then",
+        pathSegments: ["Backend", "Testing", "Given When Then"],
+      },
+    },
+    Infrastructure: {
+      "Infrastructure As Code": {
+        "AWS CDK": {
+          content: "",
+          name: "AWS CDK",
+          pathSegments: [
+            "Backend",
+            "Infrastructure",
+            "Infrastructure As Code",
+            "AWS CDK",
+          ],
+        },
+        Terraform: {
+          content: "",
+          name: "Terraform",
+          pathSegments: [
+            "Backend",
+            "Infrastructure",
+            "Infrastructure As Code",
+            "Terraform",
+          ],
+        },
+        Ansible: {
+          content: "",
+          name: "Ansible",
+          pathSegments: [
+            "Backend",
+            "Infrastructure",
+            "Infrastructure As Code",
+            "Ansible",
+          ],
+        },
+      },
+      CICD: {
+        CircleCI: {
+          content: "",
+          name: "CircleCI",
+          pathSegments: ["Backend", "Infrastructure", "CICD", "CircleCI"],
+        },
+        "Github Actions": {
+          content: "",
+          name: "Github Actions",
+          pathSegments: ["Backend", "Infrastructure", "CICD", "Github Actions"],
+        },
+      },
+    },
+    "Distributed Systems": {
+      "Partitioning or Sharding": {
+        content: "",
+        name: "Partitioning or Sharding",
+        pathSegments: [
+          "Backend",
+          "Distributed Systems",
+          "Partitioning or Sharding",
+        ],
+      },
+      "CAP Theorem": {
+        content: "",
+        name: "CAP Theorem",
+        pathSegments: ["Backend", "Distributed Systems", "CAP Theorem"],
+      },
+      "Consensus Algorithms": {
+        content: "",
+        name: "Consensus Algorithms",
+        pathSegments: [
+          "Backend",
+          "Distributed Systems",
+          "Consensus Algorithms",
+        ],
+      },
+      Replication: {
+        "Multi-leader": {
+          content: "",
+          name: "Multi-leader",
+          pathSegments: [
+            "Backend",
+            "Distributed Systems",
+            "Replication",
+            "Multi-leader",
+          ],
+        },
+        "Leader Follower": {
+          content: "",
+          name: "Leader Follower",
+          pathSegments: [
+            "Backend",
+            "Distributed Systems",
+            "Replication",
+            "Leader Follower",
+          ],
+        },
+        Leaderless: {
+          content: "Cassandra for developers",
+          name: "Leaderless",
+          pathSegments: [
+            "Backend",
+            "Distributed Systems",
+            "Replication",
+            "Leaderless",
+          ],
+        },
+      },
+      "Eventual Consistency": {
+        content: "",
+        name: "Eventual Consistency",
+        pathSegments: [
+          "Backend",
+          "Distributed Systems",
+          "Eventual Consistency",
+        ],
+      },
+      "Distributed Transactions": {
+        content: "",
+        name: "Distributed Transactions",
+        pathSegments: [
+          "Backend",
+          "Distributed Systems",
+          "Distributed Transactions",
+        ],
+      },
+      content: "Designing Data-Intensive Applications by Martin Kleppmann",
+      name: "Distributed Systems",
+      pathSegments: ["Backend", "Distributed Systems"],
+    },
+    Messaging: {
+      Actors: {
+        Akka: {
+          content: "",
+          name: "Akka",
+          pathSegments: ["Backend", "Messaging", "Actors", "Akka"],
+        },
+      },
+      "Distributed Messaging": {
+        Kafka: {
+          content: "Kafka: The Definitive Guide by Neha Narkhede",
+          name: "Kafka",
+          pathSegments: [
+            "Backend",
+            "Messaging",
+            "Distributed Messaging",
+            "Kafka",
+          ],
+          "Kafka Streams": {
+            content: "Kafka Streams for Data Processing (Udemy)",
+            name: "Kafka Streams",
+            pathSegments: [
+              "Backend",
+              "Messaging",
+              "Distributed Messaging",
+              "Kafka",
+              "Kafka Streams",
+            ],
+          },
+          Administration: {
+            content: "Kafka Cluster Setup and Administration (Udemy)",
+            name: "Administration",
+            pathSegments: [
+              "Backend",
+              "Messaging",
+              "Distributed Messaging",
+              "Kafka",
+              "Administration",
+            ],
+          },
+          "Kafka Connect": {
+            content: "Kafka Connect Hands-on Learning (Udemy)",
+            name: "Kafka Connect",
+            pathSegments: [
+              "Backend",
+              "Messaging",
+              "Distributed Messaging",
+              "Kafka",
+              "Kafka Connect",
+            ],
+          },
+          Security: {
+            content: "Kafka Security (Udemy)",
+            name: "Security",
+            pathSegments: [
+              "Backend",
+              "Messaging",
+              "Distributed Messaging",
+              "Kafka",
+              "Security",
+            ],
+          },
+          "Schema Registry": {
+            content: "Confluent Schema Registry & REST Proxy (Udemy)",
+            name: "Schema Registry",
+            pathSegments: [
+              "Backend",
+              "Messaging",
+              "Distributed Messaging",
+              "Kafka",
+              "Schema Registry",
+            ],
+          },
+        },
+      },
+      "Traditional MQ": {
+        RabbitMQ: {
+          content: "",
+          name: "RabbitMQ",
+          pathSegments: ["Backend", "Messaging", "Traditional MQ", "RabbitMQ"],
+        },
+        JMS: {
+          content: "",
+          name: "JMS",
+          pathSegments: ["Backend", "Messaging", "Traditional MQ", "JMS"],
+        },
+      },
+    },
+    "Functional Programming": {
+      content: "Functional Programming in Scala by Chiusano and Bjarnason",
+      name: "Functional Programming",
+      pathSegments: ["Backend", "Functional Programming"],
+      ProFunctor: {
+        content: "",
+        name: "ProFunctor",
+        pathSegments: ["Backend", "Functional Programming", "ProFunctor"],
+      },
+      Semigroup: {
+        content: "",
+        name: "Semigroup",
+        pathSegments: ["Backend", "Functional Programming", "Semigroup"],
+      },
+      Optics: {
+        Lens: {
+          content: "",
+          name: "Lens",
+          pathSegments: ["Backend", "Functional Programming", "Optics", "Lens"],
+        },
+        Traversal: {
+          content: "",
+          name: "Traversal",
+          pathSegments: [
+            "Backend",
+            "Functional Programming",
+            "Optics",
+            "Traversal",
+          ],
+        },
+        Plated: {
+          content: "",
+          name: "Plated",
+          pathSegments: [
+            "Backend",
+            "Functional Programming",
+            "Optics",
+            "Plated",
+          ],
+        },
+        Iso: {
+          content: "",
+          name: "Iso",
+          pathSegments: ["Backend", "Functional Programming", "Optics", "Iso"],
+        },
+        Prism: {
+          content: "",
+          name: "Prism",
+          pathSegments: [
+            "Backend",
+            "Functional Programming",
+            "Optics",
+            "Prism",
+          ],
+        },
+        Fold: {
+          content: "",
+          name: "Fold",
+          pathSegments: ["Backend", "Functional Programming", "Optics", "Fold"],
+        },
+      },
+      Functor: {
+        content: "",
+        name: "Functor",
+        pathSegments: ["Backend", "Functional Programming", "Functor"],
+      },
+      Continuations: {
+        content: "",
+        name: "Continuations",
+        pathSegments: ["Backend", "Functional Programming", "Continuations"],
+      },
+      Divisble: {
+        content: "",
+        name: "Divisble",
+        pathSegments: ["Backend", "Functional Programming", "Divisble"],
+      },
+      "Contravariant Functor": {
+        content: "",
+        name: "Contravariant Functor",
+        pathSegments: [
+          "Backend",
+          "Functional Programming",
+          "Contravariant Functor",
+        ],
+      },
+      "Invariant Functor": {
+        content: "",
+        name: "Invariant Functor",
+        pathSegments: [
+          "Backend",
+          "Functional Programming",
+          "Invariant Functor",
+        ],
+      },
+      Applicative: {
+        content: "",
+        name: "Applicative",
+        pathSegments: ["Backend", "Functional Programming", "Applicative"],
+      },
+      Recursion: {
+        content: "",
+        name: "Recursion",
+        pathSegments: ["Backend", "Functional Programming", "Recursion"],
+      },
+      Monad: {
+        content: "",
+        name: "Monad",
+        pathSegments: ["Backend", "Functional Programming", "Monad"],
+      },
+      "Monad Transformers": {
+        content: "",
+        name: "Monad Transformers",
+        pathSegments: [
+          "Backend",
+          "Functional Programming",
+          "Monad Transformers",
+        ],
+      },
+      "Functional Operators on Collections": {
+        content: "",
+        name: "Functional Operators on Collections",
+        pathSegments: [
+          "Backend",
+          "Functional Programming",
+          "Functional Operators on Collections",
+        ],
+      },
+      "Free Monad": {
+        content: "",
+        name: "Free Monad",
+        pathSegments: ["Backend", "Functional Programming", "Free Monad"],
+      },
+      Monoid: {
+        content: "",
+        name: "Monoid",
+        pathSegments: ["Backend", "Functional Programming", "Monoid"],
+      },
+      Traversable: {
+        content: "",
+        name: "Traversable",
+        pathSegments: ["Backend", "Functional Programming", "Traversable"],
+      },
+      Foldable: {
+        content: "",
+        name: "Foldable",
+        pathSegments: ["Backend", "Functional Programming", "Foldable"],
+      },
+      BiFunctor: {
+        content: "",
+        name: "BiFunctor",
+        pathSegments: ["Backend", "Functional Programming", "BiFunctor"],
+      },
+    },
+    Cloud: {
+      Kubernetes: {
+        content: "",
+        name: "Kubernetes",
+        pathSegments: ["Backend", "Cloud", "Kubernetes"],
+      },
+      Docker: { name: "Docker", pathSegments: ["Backend", "Cloud", "Docker"] },
+      AWS: {
+        content: "",
+        name: "AWS",
+        pathSegments: ["Backend", "Cloud", "AWS"],
+      },
+      Azure: {
+        content: "",
+        name: "Azure",
+        pathSegments: ["Backend", "Cloud", "Azure"],
+      },
+    },
+    Frameworks: {
+      Play: {
+        content: "Lightbend's Play Essential",
+        name: "Play",
+        pathSegments: ["Backend", "Frameworks", "Play"],
+      },
+    },
+    Databases: {
+      Relational: {
+        Normalisation: {
+          content: "",
+          name: "Normalisation",
+          pathSegments: ["Backend", "Databases", "Relational", "Normalisation"],
+        },
+        "Database Design": {
+          content:
+            "SQL Antipatterns: Avoiding the Pitfalls of Database Programming by Karwin",
+          name: "Database Design",
+          pathSegments: [
+            "Backend",
+            "Databases",
+            "Relational",
+            "Database Design",
+          ],
+        },
+        Triggers: {
+          content: "",
+          name: "Triggers",
+          pathSegments: ["Backend", "Databases", "Relational", "Triggers"],
+        },
+        Views: {
+          content: "",
+          name: "Views",
+          pathSegments: ["Backend", "Databases", "Relational", "Views"],
+        },
+        Indexes: {
+          content: "",
+          name: "Indexes",
+          pathSegments: ["Backend", "Databases", "Relational", "Indexes"],
+        },
+        Transactions: {
+          ACID: {
+            content: "",
+            name: "ACID",
+            pathSegments: [
+              "Backend",
+              "Databases",
+              "Relational",
+              "Transactions",
+              "ACID",
+            ],
+          },
+          "Isolation Levels": {
+            content: "",
+            name: "Isolation Levels",
+            pathSegments: [
+              "Backend",
+              "Databases",
+              "Relational",
+              "Transactions",
+              "Isolation Levels",
+            ],
+          },
+        },
+        "Foreign Keys": {
+          content: "",
+          name: "Foreign Keys",
+          pathSegments: ["Backend", "Databases", "Relational", "Foreign Keys"],
+        },
+      },
+      ORM: {
+        "Object-Relational Mismatch": {
+          content: "",
+          name: "Object-Relational Mismatch",
+          pathSegments: [
+            "Backend",
+            "Databases",
+            "ORM",
+            "Object-Relational Mismatch",
+          ],
+        },
+      },
+    },
+    "Software Architecture": {
+      CQRS: {
+        content: "",
+        name: "CQRS",
+        pathSegments: ["Backend", "Software Architecture", "CQRS"],
+      },
+      SOLID: {
+        content: "",
+        name: "SOLID",
+        pathSegments: ["Backend", "Software Architecture", "SOLID"],
+      },
+      "Coupling And Cohesion": {
+        content: "",
+        name: "Coupling And Cohesion",
+        pathSegments: [
+          "Backend",
+          "Software Architecture",
+          "Coupling And Cohesion",
+        ],
+      },
+      "Enterprise Integration Patterns": {
+        content: "",
+        name: "Enterprise Integration Patterns",
+        pathSegments: [
+          "Backend",
+          "Software Architecture",
+          "Enterprise Integration Patterns",
+        ],
+      },
+      "Design Patterns": {
+        content: "Refactoring Guru",
+        name: "Design Patterns",
+        pathSegments: ["Backend", "Software Architecture", "Design Patterns"],
+      },
+      "Event Sourcing": {
+        content: "",
+        name: "Event Sourcing",
+        pathSegments: ["Backend", "Software Architecture", "Event Sourcing"],
+      },
+      "Clean Architecture": {
+        content: "",
+        name: "Clean Architecture",
+        pathSegments: [
+          "Backend",
+          "Software Architecture",
+          "Clean Architecture",
+        ],
+      },
+      "Message-driven Microservices": {
+        content: "",
+        name: "Message-driven Microservices",
+        pathSegments: [
+          "Backend",
+          "Software Architecture",
+          "Message-driven Microservices",
+        ],
+      },
+      "3-tier Architecture": {
+        content: "",
+        name: "3-tier Architecture",
+        pathSegments: [
+          "Backend",
+          "Software Architecture",
+          "3-tier Architecture",
+        ],
+      },
+      DDD: {
+        content: "",
+        name: "DDD",
+        pathSegments: ["Backend", "Software Architecture", "DDD"],
+      },
+    },
+    "General Knowledge": {
+      REST: {
+        content: "",
+        name: "REST",
+        pathSegments: ["Backend", "General Knowledge", "REST"],
+      },
+      Encryption: {
+        content: "",
+        name: "Encryption",
+        pathSegments: ["Backend", "General Knowledge", "Encryption"],
+      },
+      "Data Structures": {
+        "TreeMap and TreeSet": {
+          content: "",
+          name: "TreeMap and TreeSet",
+          pathSegments: [
+            "Backend",
+            "General Knowledge",
+            "Data Structures",
+            "TreeMap and TreeSet",
+          ],
+        },
+        "HashMap and HashSet": {
+          content: "",
+          name: "HashMap and HashSet",
+          pathSegments: [
+            "Backend",
+            "General Knowledge",
+            "Data Structures",
+            "HashMap and HashSet",
+          ],
+        },
+        Vector: {
+          content: "",
+          name: "Vector",
+          pathSegments: [
+            "Backend",
+            "General Knowledge",
+            "Data Structures",
+            "Vector",
+          ],
+        },
+        LinkedList: {
+          content: "",
+          name: "LinkedList",
+          pathSegments: [
+            "Backend",
+            "General Knowledge",
+            "Data Structures",
+            "LinkedList",
+          ],
+        },
+      },
+      SSL: {
+        content: "",
+        name: "SSL",
+        pathSegments: ["Backend", "General Knowledge", "SSL"],
+      },
+      "Threads and Locks": {
+        Deadlocks: {
+          content: "",
+          name: "Deadlocks",
+          pathSegments: [
+            "Backend",
+            "General Knowledge",
+            "Threads and Locks",
+            "Deadlocks",
+          ],
+        },
+      },
+      HTTP: {
+        content: "",
+        name: "HTTP",
+        pathSegments: ["Backend", "General Knowledge", "HTTP"],
+      },
+      Generics: {
+        "Coveriance and Contravariance and Invariance": {
+          content: "",
+          name: "Coveriance and Contravariance and Invariance",
+          pathSegments: [
+            "Backend",
+            "General Knowledge",
+            "Generics",
+            "Coveriance and Contravariance and Invariance",
+          ],
+        },
+      },
+    },
+    Streaming: {
+      "Stateful Operators": {
+        Windowed: {
+          content: "",
+          name: "Windowed",
+          pathSegments: [
+            "Backend",
+            "Streaming",
+            "Stateful Operators",
+            "Windowed",
+          ],
+        },
+        Tables: {
+          content: "",
+          name: "Tables",
+          pathSegments: [
+            "Backend",
+            "Streaming",
+            "Stateful Operators",
+            "Tables",
+          ],
+        },
+      },
+      "Kafka Streams": {
+        content: "",
+        name: "Kafka Streams",
+        pathSegments: ["Backend", "Streaming", "Kafka Streams"],
+      },
+      "Difference Hot and Cold": {
+        content: "",
+        name: "Difference Hot and Cold",
+        pathSegments: ["Backend", "Streaming", "Difference Hot and Cold"],
+      },
+      "Akka Streams": {
+        content: "",
+        name: "Akka Streams",
+        pathSegments: ["Backend", "Streaming", "Akka Streams"],
+      },
+      "Stateless Operators": {
+        content: "",
+        name: "Stateless Operators",
+        pathSegments: ["Backend", "Streaming", "Stateless Operators"],
+      },
+      CDC: {
+        content: "",
+        name: "CDC",
+        pathSegments: ["Backend", "Streaming", "CDC"],
+      },
+      Backpressure: {
+        content: "",
+        name: "Backpressure",
+        pathSegments: ["Backend", "Streaming", "Backpressure"],
+      },
+    },
+  },
+  Frontend: {
+    Tools: {
+      "NPM and Yarn": {
+        content: "",
+        name: "NPM and Yarn",
+        pathSegments: ["Frontend", "Tools", "NPM and Yarn"],
+      },
+      Git: {
+        content: "",
+        name: "Git",
+        pathSegments: ["Frontend", "Tools", "Git"],
+      },
+      CICD: {
+        "Azure Pipeline": {
+          content: "",
+          name: "Azure Pipeline",
+          pathSegments: ["Frontend", "Tools", "CICD", "Azure Pipeline"],
+        },
+        "Github Actions": {
+          content: "",
+          name: "Github Actions",
+          pathSegments: ["Frontend", "Tools", "CICD", "Github Actions"],
+        },
+      },
+      Scaffolding: {
+        Yeoman: {
+          content: "",
+          name: "Yeoman",
+          pathSegments: ["Frontend", "Tools", "Scaffolding", "Yeoman"],
+        },
+        "Angular Schematics": {
+          content: "",
+          name: "Angular Schematics",
+          pathSegments: [
+            "Frontend",
+            "Tools",
+            "Scaffolding",
+            "Angular Schematics",
+          ],
+        },
+      },
+      "Chrome Dev Tools": {
+        content: "",
+        name: "Chrome Dev Tools",
+        pathSegments: ["Frontend", "Tools", "Chrome Dev Tools"],
+      },
+    },
+    "Programming Languages": {
+      "CSS and LESS and SASS": {
+        content: "",
+        name: "CSS and LESS and SASS",
+        pathSegments: [
+          "Frontend",
+          "Programming Languages",
+          "CSS and LESS and SASS",
+        ],
+      },
+      HTML: {
+        content: "",
+        name: "HTML",
+        pathSegments: ["Frontend", "Programming Languages", "HTML"],
+      },
+      Typescript: {
+        content: "",
+        name: "Typescript",
+        pathSegments: ["Frontend", "Programming Languages", "Typescript"],
+      },
+      Node: {
+        content: "",
+        name: "Node",
+        pathSegments: ["Frontend", "Programming Languages", "Node"],
+      },
+      Javascript: {
+        content: "",
+        name: "Javascript",
+        pathSegments: ["Frontend", "Programming Languages", "Javascript"],
+      },
+    },
+    Cloud: {
+      "Azure Functions": {
+        content: "",
+        name: "Azure Functions",
+        pathSegments: ["Frontend", "Cloud", "Azure Functions"],
+      },
+      Docker: {
+        content: "",
+        name: "Docker",
+        pathSegments: ["Frontend", "Cloud", "Docker"],
+      },
+      NGINX: {
+        content: "",
+        name: "NGINX",
+        pathSegments: ["Frontend", "Cloud", "NGINX"],
+      },
+      Apache: {
+        content: "",
+        name: "Apache",
+        pathSegments: ["Frontend", "Cloud", "Apache"],
+      },
+      AWS: {
+        content: "",
+        name: "AWS",
+        pathSegments: ["Frontend", "Cloud", "AWS"],
+      },
+    },
+    Frameworks: {
+      Angular: {
+        content: "",
+        name: "Angular",
+        pathSegments: ["Frontend", "Frameworks", "Angular"],
+      },
+      React: {
+        content: "",
+        name: "React",
+        pathSegments: ["Frontend", "Frameworks", "React"],
+      },
+      Monorepos: {
+        Nx: {
+          content: "",
+          name: "Nx",
+          pathSegments: ["Frontend", "Frameworks", "Monorepos", "Nx"],
+        },
+        Lerna: {
+          content: "",
+          name: "Lerna",
+          pathSegments: ["Frontend", "Frameworks", "Monorepos", "Lerna"],
+        },
+      },
+    },
+    "Software Architecture": {
+      Async: {
+        Callbacks: {
+          content: "",
+          name: "Callbacks",
+          pathSegments: [
+            "Frontend",
+            "Software Architecture",
+            "Async",
+            "Callbacks",
+          ],
+        },
+        "async and await": {
+          content: "",
+          name: "async and await",
+          pathSegments: [
+            "Frontend",
+            "Software Architecture",
+            "Async",
+            "async and await",
+          ],
+        },
+        Promises: {
+          content: "",
+          name: "Promises",
+          pathSegments: [
+            "Frontend",
+            "Software Architecture",
+            "Async",
+            "Promises",
+          ],
+        },
+        Generators: {
+          content: "",
+          name: "Generators",
+          pathSegments: [
+            "Frontend",
+            "Software Architecture",
+            "Async",
+            "Generators",
+          ],
+        },
+      },
+      "State Management": {
+        MobX: {
+          content: "",
+          name: "MobX",
+          pathSegments: [
+            "Frontend",
+            "Software Architecture",
+            "State Management",
+            "MobX",
+          ],
+        },
+        Redux: {
+          "Redux Toolkit": {
+            content: "",
+            name: "Redux Toolkit",
+            pathSegments: [
+              "Frontend",
+              "Software Architecture",
+              "State Management",
+              "Redux",
+              "Redux Toolkit",
+            ],
+          },
+          content: "",
+          name: "Redux",
+          pathSegments: [
+            "Frontend",
+            "Software Architecture",
+            "State Management",
+            "Redux",
+          ],
+        },
+        NgRx: {
+          content: "",
+          name: "NgRx",
+          pathSegments: [
+            "Frontend",
+            "Software Architecture",
+            "State Management",
+            "NgRx",
+          ],
+        },
+      },
+      "Progressive Web Apps": {
+        content: "",
+        name: "Progressive Web Apps",
+        pathSegments: [
+          "Frontend",
+          "Software Architecture",
+          "Progressive Web Apps",
+        ],
+      },
+      "Web Workers": {
+        content: "",
+        name: "Web Workers",
+        pathSegments: ["Frontend", "Software Architecture", "Web Workers"],
+      },
+      GraphQL: {
+        content: "",
+        name: "GraphQL",
+        pathSegments: ["Frontend", "Software Architecture", "GraphQL"],
+      },
+      "Service Workers": {
+        content: "",
+        name: "Service Workers",
+        pathSegments: ["Frontend", "Software Architecture", "Service Workers"],
+      },
+    },
+    "Functional Programming": {
+      Recursion: {
+        content: "",
+        name: "Recursion",
+        pathSegments: ["Frontend", "Functional Programming", "Recursion"],
+      },
+      Composition: {
+        content: "",
+        name: "Composition",
+        pathSegments: ["Frontend", "Functional Programming", "Composition"],
+      },
+      "Functional Operators": {
+        content: "",
+        name: "Functional Operators",
+        pathSegments: [
+          "Frontend",
+          "Functional Programming",
+          "Functional Operators",
+        ],
+      },
+    },
+    Streaming: {
+      Websockets: {
+        content: "",
+        name: "Websockets",
+        pathSegments: ["Frontend", "Streaming", "Websockets"],
+      },
+      RxJs: {
+        content: "",
+        name: "RxJs",
+        pathSegments: ["Frontend", "Streaming", "RxJs"],
+      },
+    },
+  },
+};

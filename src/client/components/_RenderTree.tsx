@@ -29,14 +29,14 @@ const RenderTree: React.FC<Props> = ({ topicTree }) => {
         | FileData2;
       const contentStr = content ? (
         <ul>
-          <li>{content}</li>
+          <li>📓 {content}</li>
         </ul>
       ) : (
         ""
       );
       const hasRest = Object.keys(rest).length > 0;
       return hasRest ? (
-        <FoldableListItem label={entryKey} tree={rest} />
+        <FoldableListItem label={entryKey} content={content} tree={rest} />
       ) : (
         <li>
           {formatFileName(entryKey)} {contentStr}
