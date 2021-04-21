@@ -1,5 +1,6 @@
 import { React } from "https://deno.land/x/pagic@v1.2.1/mod.ts";
 import { CustomNode } from "../../types.ts";
+import ContentListItem from "./_ContentListItem.tsx";
 import RenderTree from "./_RenderTree.tsx";
 
 interface Props {
@@ -12,17 +13,7 @@ interface Props {
 
 export const contentToListItems = (pathSegments: string[]) => (
   c: CustomNode
-) => {
-  const onClick: React.DOMAttributes<HTMLAnchorElement>["onClick"] = (ev) => {
-    ev.preventDefault();
-    alert("not yet implemented");
-  }
-  return (
-    <li style={{ cursor: "help" }} title={c.paragraph.join("\n")}>
-      📚 {c.heading} <a onClick={onClick} href={pathSegments.join("/")}>details</a>
-    </li>
-  )
-};
+) => <ContentListItem node={c} pathSegments={pathSegments} />;
 
 const FoldableListItem: React.FC<Props> = ({ label, content, tree }) => {
   const [isFolded, setIsFolded] = React.useState(true);
