@@ -13,7 +13,7 @@ interface Props {
 export const contentToListItems = (pathSegments: string[]) => (
   c: CustomNode
 ) => (
-  <li style={{ cursor: "help" }} title={c.paragraph.join(" ")}>
+  <li style={{ cursor: "help" }} title={c.paragraph.join("\n")}>
     📚 {c.heading} <a href={pathSegments.join("/")}>details</a>
   </li>
 );

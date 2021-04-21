@@ -50,25 +50,10 @@ export function digForHeadingContent(n: Node): CustomNode[] {
     .map((child): CustomNode | Node => {
       const heading =
         child?.props?.type === "heading" && getHeadingContent(child);
-      // const heading = y ? y : false;
-      // if (heading) {
-      //   return heading;
-      // }
-      // return child;
       return heading
         ? { type: "topic-content", heading, paragraph: [] }
         : child;
     })
     .reduce(reduceNodesToGroup, []);
-  // console.log(newNode);
   return newNode;
-
-  // const headings = n.children
-  //   .filter((h) => h.props)
-  //   .filter((h) => h.props && h.props.type === "heading")
-  //   .flatMap((h) => h.children)
-  //   .filter((h) => h && h.props && h.props.type === "text")
-  //   // @ts-expect-error
-  //   .map((t) => t && t.props && t.props.content);
-  // return headings;
 }
