@@ -1,7 +1,7 @@
 import { WalkEntry, walkSync } from "fs";
 import { Node } from "markdown_tree";
 import { digForHeadingContent } from "./parseMarkdown.ts";
-import { FileData } from "./types.ts";
+import { RawFileData } from "./types.ts";
 
 /* Examples:
   Read file: await Deno.readFile(filename));
@@ -14,11 +14,12 @@ import { FileData } from "./types.ts";
 
 */
 
-async function parseFile(path: string, name: string): Promise<FileData> {
+async function parseFile(path: string, name: string): Promise<RawFileData> {
   const decoder = new TextDecoder("utf-8");
   const filename = path;
   const markdown = decoder.decode(await Deno.readFile(filename));
   const markdownNode = Node.from(markdown);
+
   const result = {
     path,
     name,
@@ -27,19 +28,19 @@ async function parseFile(path: string, name: string): Promise<FileData> {
   return result;
 }
 
-const mapPathToFileData = (entry: WalkEntry): Promise<FileData> | undefined => {
+const mapPathToFileData = (entry: WalkEntry): Promise<RawFileData> | undefined => {
   if (entry.isFile) {
     return parseFile(entry.path, entry.name);
   }
 };
 
-const isDefinedEntry = (entry: FileData | undefined): entry is FileData =>
+const isDefinedEntry = (entry: RawFileData | undefined): entry is RawFileData =>
   typeof entry !== "undefined";
 
 export const parseFilesOnPaths = async (
   dirs: string[]
-): Promise<FileData[]> => {
-  const results: FileData[] = (
+): Promise<RawFileData[]> => {
+  const results: RawFileData[] = (
     await Promise.all(
       dirs.flatMap((dir) =>
         Array.from(walkSync(dir)).map(mapPathToFileData)
