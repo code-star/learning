@@ -20,14 +20,18 @@ interface Props {
   topicTree: TopicTree;
 }
 
+const distillFileData = (node: TopicTree): [FileData, TopicTree] => {
+  const { pathSegments, content, name, ...rest } = node;
+  const fileData: FileData = { content, name, pathSegments };
+  return [fileData, rest];
+};
+
 const RenderTree: React.FC<Props> = ({ topicTree }) => {
   const listStr = Object.entries(topicTree)
     .sort(byKey)
     .map(([entryKey, entryVal]) => {
-      const { pathSegments, content, name, ...rest } = entryVal as
-        | TopicTree
-        | FileData;
-      // TODO Fix content any type
+      const [fileData, rest] = distillFileData(entryVal);
+      const { pathSegments, content, name } = fileData;
       const contentStr = content ? (
         <ul>{content.map(contentToListItems(pathSegments))}</ul>
       ) : (
