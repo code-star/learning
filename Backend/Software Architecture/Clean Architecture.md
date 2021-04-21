@@ -1,1 +1,1 @@
-Also: Onion Architeture, Domain-centric architecture.
+## Also: Onion Architeture, Domain-centric architecture.

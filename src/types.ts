@@ -1,11 +1,17 @@
+export interface CustomNode {
+  type: "topic-content";
+  heading: string;
+  paragraph: string[];
+}
+
 export interface RawFileData {
-  content: string[];
+  content: CustomNode[];
   name: string;
   path: string;
 }
 
 export interface FileData {
-  content: string[];
+  content: CustomNode[];
   name: string;
   pathSegments: string[];
 }

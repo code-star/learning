@@ -1,10 +1,5 @@
 import { Node } from "markdown_tree";
-
-interface CustomNode {
-  type: "topic-content";
-  heading: string;
-  paragraph: string[];
-}
+import { CustomNode } from "./types.ts";
 
 const getContent = (n: Node): string => {
   if (n?.props?.type === "paragraph") {
@@ -17,9 +12,12 @@ const getContent = (n: Node): string => {
 
 const isCustomNode = (n: Node | CustomNode): n is CustomNode => {
   return (n as CustomNode).type && (n as CustomNode).type === "topic-content";
-}
+};
 
-const reduceNodesToGroup = (acc: CustomNode[], next: Node | CustomNode): CustomNode[] => {
+const reduceNodesToGroup = (
+  acc: CustomNode[],
+  next: Node | CustomNode
+): CustomNode[] => {
   if (isCustomNode(next)) {
     acc.push(next);
     return acc;
@@ -31,12 +29,19 @@ const reduceNodesToGroup = (acc: CustomNode[], next: Node | CustomNode): CustomN
     }
     last.paragraph.push(getContent(next));
   } else {
-    console.error("no group exists");
+    console.error("no group exists", acc, next);
   }
   return acc;
 };
 
-export function digForHeadingContent(n: Node): string[] {
+const getHeadingContent = (n: Node) => {
+  return n.children
+    ?.filter((h) => h && h.props && h.props.type === "text")
+    .map((t) => t && t.props && (t.props as any).content)
+    .join();
+};
+
+export function digForHeadingContent(n: Node): CustomNode[] {
   if (!n.children) {
     return [];
   }
@@ -44,36 +49,26 @@ export function digForHeadingContent(n: Node): string[] {
   const newNode = n.children
     .map((child): CustomNode | Node => {
       const heading =
-        child?.props?.type === "heading" &&
-        child.children
-          ?.filter((h) => h && h.props && h.props.type === "text")
-          .map((t) => t && t.props && (t.props as any).content)
-          .join();
+        child?.props?.type === "heading" && getHeadingContent(child);
       // const heading = y ? y : false;
       // if (heading) {
       //   return heading;
       // }
       // return child;
-      return heading ? { type: "topic-content", heading, paragraph: [] } : child;
+      return heading
+        ? { type: "topic-content", heading, paragraph: [] }
+        : child;
     })
     .reduce(reduceNodesToGroup, []);
-  console.log(newNode);
+  // console.log(newNode);
+  return newNode;
 
-  // TODO Fix this garbage
-  const headings = n.children
-    .filter((h) => h.props)
-    .filter((h) => h.props && h.props.type === "heading")
-    .flatMap((h) => h.children)
-    .filter((h) => h && h.props && h.props.type === "text")
-    // @ts-expect-error
-    .map((t) => t && t.props && t.props.content);
-  // console.log(n, headings);
-  return headings;
-  // if (!heading) {
-  //   // throw Error("no heading");
-  //   // console.log("no heading");
-  //   return "";
-  // }
-  // const t = heading.children?.find((h) => h.props && h.props.type === "text");
-  // return t && t.props && t.props.content;
+  // const headings = n.children
+  //   .filter((h) => h.props)
+  //   .filter((h) => h.props && h.props.type === "heading")
+  //   .flatMap((h) => h.children)
+  //   .filter((h) => h && h.props && h.props.type === "text")
+  //   // @ts-expect-error
+  //   .map((t) => t && t.props && t.props.content);
+  // return headings;
 }
