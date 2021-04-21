@@ -1,6 +1,6 @@
-import { FileData, FileData2, TopicTree } from "./types.ts";
+import { RawFileData, FileData, TopicTree } from "./types.ts";
 
-const reduceSegmentsToLeaf = (fileData: FileData2) => (
+const reduceSegmentsToLeaf = (fileData: FileData) => (
   ref: TopicTree,
   seg: string,
   index: number,
@@ -26,17 +26,17 @@ const reduceSegmentsToLeaf = (fileData: FileData2) => (
   return ref;
 };
 
-const reduceToTree = (acc: TopicTree, nextFileData: FileData2) => {
+const reduceToTree = (acc: TopicTree, nextFileData: FileData) => {
   const { pathSegments, ...rest } = nextFileData;
 
   pathSegments.reduce(reduceSegmentsToLeaf(nextFileData), acc);
   return acc;
 };
 
-const convertFileDataListToTree = (fileDataList: FileData[]) =>
+const convertFileDataListToTree = (fileDataList: RawFileData[]) =>
   fileDataList
     .map(
-      ({ path, ...rest }): FileData2 => {
+      ({ path, ...rest }): FileData => {
         const pathSegments = path.split("/");
         return {
           ...rest,

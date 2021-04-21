@@ -4,7 +4,7 @@ export interface RawFileData {
   path: string;
 }
 
-export interface FileData2 {
+export interface FileData {
   content: string;
   name: string;
   pathSegments: string[];
@@ -12,5 +12,5 @@ export interface FileData2 {
 
 export interface TopicTree {
   // TODO fix recursive type
-  [key: string]: any; // TopicTree | FileData2;
+  [key: string]: any; // TopicTree | FileData;
 }
