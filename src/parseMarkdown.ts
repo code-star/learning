@@ -1,5 +1,5 @@
-import { Node } from "markdown_tree";
-// import { Node } from "./treetest.ts";
+// import { Node } from "markdown_tree";
+import { Node } from "./markdown_tree_copy.ts"; // TODO required features are not published yet, see https://github.com/yw662/deno_markdown_tree/issues/1
 import { CustomNode } from "./types.ts";
 
 const isCustomNode = (n: Node | CustomNode): n is CustomNode => {
