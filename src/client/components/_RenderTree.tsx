@@ -1,7 +1,7 @@
 import { React } from "https://deno.land/x/pagic@v1.2.1/mod.ts";
 import { formatFileName } from "../utils/_formatters.tsx";
 import { FileData, TopicTree } from "../../types.ts";
-import FoldableListItem from "./_FoldableListItem.tsx";
+import FoldableListItem, { contentToListItems } from "./_FoldableListItem.tsx";
 
 const byKey = (
   entry: [string, unknown],
@@ -27,12 +27,9 @@ const RenderTree: React.FC<Props> = ({ topicTree }) => {
       const { pathSegments, content, name, ...rest } = entryVal as
         | TopicTree
         | FileData;
+      // TODO Fix content any type
       const contentStr = content ? (
-        <ul>
-          {content.map((c: string) => (
-            <li>📚 {c}</li>
-          ))}
-        </ul>
+        <ul>{content.map(contentToListItems(pathSegments))}</ul>
       ) : (
         ""
       );

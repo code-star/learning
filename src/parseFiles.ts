@@ -19,7 +19,6 @@ async function parseFile(path: string, name: string): Promise<RawFileData> {
   const filename = path;
   const markdown = decoder.decode(await Deno.readFile(filename));
   const markdownNode = Node.from(markdown);
-
   const result = {
     path,
     name,

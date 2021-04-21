@@ -9,6 +9,10 @@ interface Props {
   };
 }
 
+export const contentToListItems = (pathSegments: string[]) => (c: string) => (
+  <li>📚 {c} <a href={pathSegments.join("/")}>details</a></li>
+);
+
 const FoldableListItem: React.FC<Props> = ({ label, content, tree }) => {
   const [isFolded, setIsFolded] = React.useState(true);
 
@@ -23,8 +27,7 @@ const FoldableListItem: React.FC<Props> = ({ label, content, tree }) => {
     </span>
   );
 
-  // TODO deduplicate with similar snippet in RenderTree
-  const contentStr = content ? content.map(c => <li>📚 {c}</li>) : "";
+  const contentStr = content ? content.map(contentToListItems([])) : "";
 
   const result = isFolded ? (
     ""
