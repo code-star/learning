@@ -13,6 +13,7 @@ const FoldableListItem: React.FC<Props> = ({ label, tree }) => {
 
   const clickableLabel = (
     <span
+      style={{ cursor: "pointer" }}
       onClick={() => {
         setIsFolded(!isFolded);
       }}
