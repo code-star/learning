@@ -1,0 +1,1 @@
+Functional, Object-Oriented, Procedural
