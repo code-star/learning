@@ -6,6 +6,7 @@ Read by:
 * Werner
 
 ## Scala for the Impatient by Hostmann Cay
+Good if you want to quickly get up to speed with Scala.
 
 Read by:
 * Roberto
