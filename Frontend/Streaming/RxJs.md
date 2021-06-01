@@ -17,7 +17,7 @@ Watched by:
 
 * Cuno
 
-## Asynchronous Programming in JavaScript (with Rx.js Observables)
+## Asynchronous Programming in JavaScript (with Rx.js Observables) by Jafar Husain
 
 https://frontendmasters.com/courses/asynchronous-javascript/
 
@@ -26,3 +26,4 @@ An older course, but explains the concepts very well.
 Watched by:
 
 * Cuno
+* Mikel
