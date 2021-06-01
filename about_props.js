@@ -22,7 +22,7 @@ export default {
     'contributors': [
         "M.D. van Es"
     ],
-    'date': "2021-04-21T14:13:35.000Z",
+    'date': "2021-06-01T10:36:03.000Z",
     'updated': null,
     'excerpt': "Read here about our study guide.",
     'cover': undefined,
