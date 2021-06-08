@@ -18,11 +18,11 @@ export default {
             __html: '<p>Read here about our study guide.</p>'
         } }),
     'toc': null,
-    'author': "M.D. van Es",
+    'author': "Tammy",
     'contributors': [
-        "M.D. van Es"
+        "Tammy"
     ],
-    'date': "2021-06-01T10:36:03.000Z",
+    'date': "2021-06-08T09:41:40.000Z",
     'updated': null,
     'excerpt': "Read here about our study guide.",
     'cover': undefined,
